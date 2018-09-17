@@ -1,25 +1,27 @@
+package questions;
+
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
+import java.util.Collection;
 import java.util.HashMap;
+
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 final class Question{
     String text;
     String answer;
     String comment;
+    String id;
 }
 
 public final class QuestionsGenerator {
-    private final File questionsBase;
+    private static File questionsBase = null;
 
     public QuestionsGenerator(){
         questionsBase = new File("src/question_base.json");
-        //GetQuestions();
     }
 
-    private HashMap<String, Question> GetQuestions(){
+    private static HashMap<String, Question> GetQuestions(){
         //Чтение вопросов из файла
         var gson = new Gson();
         var questions = new HashMap<String, Question>();
@@ -33,8 +35,8 @@ public final class QuestionsGenerator {
         return questions;
     }
 
-    public HashMap<String, Question> GetQuizQuestions(){
+    public static Collection<Question> GetQuizQuestions(){
         //TODO: Придумать как можно миксовать вопросы и кидать их пользователю
-        return GetQuestions();
+        return GetQuestions().values();
     }
 }

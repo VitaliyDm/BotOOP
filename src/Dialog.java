@@ -1,3 +1,5 @@
+import questions.QuestionsGenerator;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 
@@ -5,6 +7,7 @@ public class Dialog {
     protected String startCommand;
     protected String stopCommand;
     protected String showHelpCommand;
+    protected String nextQuestionCommand;
 
     private BufferedWriter outputWritter;
     private BufferedReader inputReader;
@@ -14,6 +17,7 @@ public class Dialog {
         startCommand = "/start";
         stopCommand = "/end";
         showHelpCommand = "/help";
+        nextQuestionCommand = "/next";
         inputReader = input;
         outputWritter = output;
         showHelp();
@@ -28,6 +32,7 @@ public class Dialog {
                     break;
                 else if (userAnswer.equals(showHelpCommand))
                     showHelp();
+                else if
                 else if (questionShowed)
                     break;
                     //questionsGenerator.checkAnswer();

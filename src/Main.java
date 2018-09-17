@@ -1,5 +1,5 @@
-import java.io.BufferedInputStream;
-import java.io.*;
+import questions.QuestionsGenerator;
+
 import java.util.Scanner;
 
 public class Main{
