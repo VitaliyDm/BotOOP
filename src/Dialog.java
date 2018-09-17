@@ -49,9 +49,11 @@ public class Dialog {
                     questionShowed = true;
                 }
                 else if (userAnswer.equals(questionHelpCommand))
+                    //TODO: доделать вот эту помощь, чтоб работала
                     outputWritter.write(String.format("%s \n\r", questionHelper.GetHelp()));
                 else if (questionShowed)
                 {
+                    //TODO: доделать чек
                     if (questionHelper.CheckAnswer(userAnswer)) {
                         outputWritter.write(String.format("To continue print %s, or print %s to end\n\r", nextQuestionCommand, stopCommand));
                         questionShowed = false;

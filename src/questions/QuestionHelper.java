@@ -1,6 +1,5 @@
 package questions;
 
-import java.util.Collection;
 import java.util.HashMap;
 
 public class QuestionHelper {
@@ -8,15 +7,12 @@ public class QuestionHelper {
     private float currentQuestionId;
 
     public QuestionHelper(){
-        var allQuestions = QuestionsGenerator.GetQuizQuestions();
-        for (var i = 0; i < allQuestions.size(); ++i){
-            userQuestions.put(Float.parseFloat(allQuestions.get(i).id), allQuestions.get(i));
-        }
+        userQuestions = QuestionsGenerator.GetQuizQuestions();
     }
 
     public String GetNextQuestion(){
         currentQuestionId = userQuestions.keySet().iterator().next();
-        return userQuestions.get(currentQuestionId).text;
+        return userQuestions.get(currentQuestionId).question;
     }
 
     public String GetHelp(){
@@ -24,7 +20,10 @@ public class QuestionHelper {
     }
 
     public boolean CheckAnswer(String answer){
-        var ansCorrect = answer.toLowerCase().equals(userQuestions.get(currentQuestionId).answer.toLowerCase());
+        var ansCorrect = false;
+        for (var ans : userQuestions.get(currentQuestionId).answer )
+            if (answer.toLowerCase().equals(ans.toLowerCase()))
+                ansCorrect = true;
         if (ansCorrect)
             userQuestions.remove(currentQuestionId);
         return ansCorrect;
