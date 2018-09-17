@@ -1,3 +1,4 @@
+import questions.QuestionHelper;
 import questions.QuestionsGenerator;
 
 import java.io.BufferedReader;
@@ -8,47 +9,65 @@ public class Dialog {
     protected String stopCommand;
     protected String showHelpCommand;
     protected String nextQuestionCommand;
+    protected String questionHelpCommand;
 
     private BufferedWriter outputWritter;
     private BufferedReader inputReader;
-    private QuestionsGenerator questionsGenerator;
+    private QuestionHelper questionHelper;
 
-    public Dialog(BufferedReader input, BufferedWriter output){
+    public Dialog(BufferedReader input, BufferedWriter output, QuestionHelper helper){
         startCommand = "/start";
         stopCommand = "/end";
         showHelpCommand = "/help";
         nextQuestionCommand = "/next";
+        questionHelpCommand = "/questionHelp";
         inputReader = input;
         outputWritter = output;
-        showHelp();
+        questionHelper = helper;
+        try {
+            outputWritter.write(showHelp());
+            outputWritter.flush();
+        } catch (Exception e){
+            //TODO: обработка ошибок
+        }
+        mainDialog();
     }
 
     private void mainDialog(){
         var questionShowed = false;
         while (true){
             try {
-                String userAnswer = inputReader.readLine();
-                if (userAnswer.equals(stopCommand))
+                var userAnswer = inputReader.readLine();
+                if (userAnswer.equals(startCommand))
+                    outputWritter.write(String.format("%s \n\r", questionHelper.GetNextQuestion()));
+                else if (userAnswer.equals(stopCommand))
                     break;
                 else if (userAnswer.equals(showHelpCommand))
-                    showHelp();
-                else if
+                    outputWritter.write(showHelp());
+                else if (userAnswer.equals(nextQuestionCommand)){
+                    outputWritter.write(String.format("%s \n\r", questionHelper.GetNextQuestion()));
+                    questionShowed = true;
+                }
+                else if (userAnswer.equals(questionHelpCommand))
+                    outputWritter.write(String.format("%s \n\r", questionHelper.GetHelp()));
                 else if (questionShowed)
-                    break;
-                    //questionsGenerator.checkAnswer();
+                {
+                    if (questionHelper.CheckAnswer(userAnswer)) {
+                        outputWritter.write(String.format("To continue print %s, or print %s to end\n\r", nextQuestionCommand, stopCommand));
+                        questionShowed = false;
+                    }else
+                        outputWritter.write(String.format("to get help print: %s or take next question: %s\n\r", questionHelpCommand, nextQuestionCommand));
+                }
+                outputWritter.flush();
             } catch (Exception e) {
-                //TODO: should throw exeption an write debug log
+                //TODO: should throw exception an write debug log
             }
         }
     }
 
-    protected void showHelp(){
+    protected String showHelp(){
         var botInfo = "With bot you can play game: \"Что? Где? Когда?\"";
         var botCommandsInfo = String.format("To play game print \"%s\", to end game print: \"%s\", to get help print: \"%s\"", startCommand, stopCommand, showHelpCommand);
-        try {
-            outputWritter.write(String.format("About:\n\r %s\n\r Commands: \n\r%s", botInfo, botCommandsInfo));
-        }catch (Exception e){
-            //TODO: придумать какую-то обработку ошибок
-        }
+        return String.format("About:\n\r %s\n\r Commands: \n\r%s\n\r", botInfo, botCommandsInfo);
     }
 }

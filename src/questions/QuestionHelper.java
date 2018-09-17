@@ -9,8 +9,8 @@ public class QuestionHelper {
 
     public QuestionHelper(){
         var allQuestions = QuestionsGenerator.GetQuizQuestions();
-        for (var question : allQuestions){
-            userQuestions.put(Float.parseFloat(question.id), question);
+        for (var i = 0; i < allQuestions.size(); ++i){
+            userQuestions.put(Float.parseFloat(allQuestions.get(i).id), allQuestions.get(i));
         }
     }
 

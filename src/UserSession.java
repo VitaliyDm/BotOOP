@@ -9,7 +9,8 @@ public class UserSession {
 
     public UserSession(){
         userScore = 0;
-        userDialog = Dialog(new BufferedReader(new InputStreamReader(System.in)), new BufferedWriter(new OutputStreamWriter(System.out)));
-
+        questionHelper = new QuestionHelper();
+        userDialog =
+                new Dialog(new BufferedReader(new InputStreamReader(System.in)), new BufferedWriter(new OutputStreamWriter(System.out)), questionHelper);
     }
 }
