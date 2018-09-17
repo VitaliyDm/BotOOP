@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         var scanner = new Scanner(System.in);
-        System.out.println(multiple(scanner.nextDouble(), scanner.nextDouble()));
+        //System.out.println(multiple(scanner.nextDouble(), scanner.nextDouble()));
         var genarator = new QuestionsGenerator();
     }
 

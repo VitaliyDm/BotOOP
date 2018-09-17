@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.util.HashMap;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -15,15 +16,25 @@ public final class QuestionsGenerator {
 
     public QuestionsGenerator(){
         questionsBase = new File("src/question_base.json");
+        //GetQuestions();
     }
 
-    private void GetQuestions(){
+    private HashMap<String, Question> GetQuestions(){
+        //Чтение вопросов из файла
         var gson = new Gson();
-        var questions = new HashMap<String, HashMap<String, Question>>();
+        var questions = new HashMap<String, Question>();
         try (var reader = new FileInputStream(questionsBase)){
-            questions = gson.fromJson(reader.readAllBytes().toString(), questions.getClass());
+            var data = new byte[(int) questionsBase.length()];
+            reader.read(data);
+            questions = gson.fromJson(new String(data), questions.getClass());
         } catch (Exception e){
             //TODO: Написать обработку ошибок
         }
+        return questions;
+    }
+
+    public HashMap<String, Question> GetQuizQuestions(){
+        //TODO: Придумать как можно миксовать вопросы и кидать их пользователю
+        return GetQuestions();
     }
 }
