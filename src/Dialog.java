@@ -38,8 +38,10 @@ public class Dialog {
         while (true){
             try {
                 var userAnswer = inputReader.readLine();
-                if (userAnswer.equals(startCommand))
+                if (userAnswer.equals(startCommand)){
                     outputWritter.write(String.format("%s \n\r", questionHelper.GetNextQuestion()));
+                    questionShowed = true;
+                }
                 else if (userAnswer.equals(stopCommand))
                     break;
                 else if (userAnswer.equals(showHelpCommand))
