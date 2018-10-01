@@ -3,6 +3,7 @@ import questions.QuestionsGenerator;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 
 public class Dialog {
     protected String startCommand;
@@ -15,7 +16,7 @@ public class Dialog {
     private BufferedReader inputReader;
     private QuestionHelper questionHelper;
 
-    public Dialog(BufferedReader input, BufferedWriter output, QuestionHelper helper){
+    public Dialog(BufferedReader input, BufferedWriter output, QuestionHelper helper) throws IOException {
         startCommand = "/start";
         stopCommand = "/end";
         showHelpCommand = "/help";
@@ -28,12 +29,13 @@ public class Dialog {
             outputWritter.write(showHelp());
             outputWritter.flush();
         } catch (Exception e){
-            //TODO: обработка ошибок
+            e.printStackTrace();
+            throw new IOException("Cannot write in console");
         }
         mainDialog();
     }
 
-    private void mainDialog(){
+    private void mainDialog() throws IOException {
         var questionShowed = false;
         while (true){
             try {
@@ -51,27 +53,26 @@ public class Dialog {
                     questionShowed = true;
                 }
                 else if (userAnswer.equals(questionHelpCommand))
-                    //TODO: доделать вот эту помощь, чтоб работала
                     outputWritter.write(String.format("%s \n\r", questionHelper.GetHelp()));
                 else if (questionShowed)
                 {
-                    //TODO: доделать чек
                     if (questionHelper.CheckAnswer(userAnswer)) {
-                        outputWritter.write(String.format("To continue print %s, or print %s to end\n\r", nextQuestionCommand, stopCommand));
+                        outputWritter.write(String.format("Для продолжения введите %s, или введите %s для завершения игры\n\r", nextQuestionCommand, stopCommand));
                         questionShowed = false;
                     }else
-                        outputWritter.write(String.format("to get help print: %s or take next question: %s\n\r", questionHelpCommand, nextQuestionCommand));
+                        outputWritter.write(String.format("Для подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", questionHelpCommand, nextQuestionCommand));
                 }
                 outputWritter.flush();
             } catch (Exception e) {
-                //TODO: should throw exception an write debug log
+                e.printStackTrace();
+                throw new IOException("Cannot write in console");
             }
         }
     }
 
     protected String showHelp(){
-        var botInfo = "With bot you can play game: \"Что? Где? Когда?\"";
-        var botCommandsInfo = String.format("To play game print \"%s\", to end game print: \"%s\", to get help print: \"%s\"", startCommand, stopCommand, showHelpCommand);
-        return String.format("About:\n\r %s\n\r Commands: \n\r%s\n\r", botInfo, botCommandsInfo);
+        var botInfo = "Вы можете сыграть с ботом в игру: \"Что? Где? Когда?\"";
+        var botCommandsInfo = String.format("Чтоб начать игру введите \"%s\", для завершения игры введите: \"%s\", Для получения справки введите: \"%s\"", startCommand, stopCommand, showHelpCommand);
+        return String.format("Об игре:\n\r %s\n\r Команды: \n\r%s\n\r", botInfo, botCommandsInfo);
     }
 }
