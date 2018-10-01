@@ -57,10 +57,10 @@ public class Dialog {
                 else if (questionShowed)
                 {
                     if (questionHelper.CheckAnswer(userAnswer)) {
-                        outputWritter.write(String.format("Для продолжения введите %s, или введите %s для завершения игры\n\r", nextQuestionCommand, stopCommand));
+                        outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", nextQuestionCommand, stopCommand));
                         questionShowed = false;
                     }else
-                        outputWritter.write(String.format("Для подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", questionHelpCommand, nextQuestionCommand));
+                        outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", questionHelpCommand, nextQuestionCommand));
                 }
                 outputWritter.flush();
             } catch (Exception e) {

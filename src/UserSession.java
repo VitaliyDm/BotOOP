@@ -7,7 +7,7 @@ public class UserSession {
     Dialog userDialog;
     QuestionHelper questionHelper;
 
-    public UserSession(){
+    public UserSession() throws IOException {
         userScore = 0;
         questionHelper = new QuestionHelper();
         userDialog =
