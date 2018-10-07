@@ -5,11 +5,10 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        new QuestionsGenerator();
         try {
-            new UserSession();
+            new UserSession(new QuestionsGenerator());
         } catch (IOException e){
-
+            e.printStackTrace();
         }
 
     }

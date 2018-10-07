@@ -7,23 +7,25 @@ import java.util.List;
 public class QuestionHelper {
     private ArrayList<Float> userQuestions = new ArrayList<>();
     private float currentQuestionId;
+    private QuestionsGenerator generator;
 
-    public QuestionHelper() {
-        userQuestions = QuestionsGenerator.GetQuizQuestions();
+    public QuestionHelper(QuestionsGenerator questionsGenerator) {
+        generator = questionsGenerator;
+        userQuestions = generator.GetQuizQuestions();
     }
 
-    public String GetNextQuestion() {
+    public String getNextQuestion() {
         currentQuestionId = userQuestions.iterator().next();
-        return QuestionsGenerator.AllQuestions.get(currentQuestionId).question;
+        return generator.AllQuestions.get(currentQuestionId).question;
     }
 
-    public String GetHelp() {
-        return QuestionsGenerator.AllQuestions.get(currentQuestionId).comment;
+    public String getHelp() {
+        return generator.AllQuestions.get(currentQuestionId).comment;
     }
 
-    public boolean CheckAnswer(String answer) {
+    public boolean checkAnswer(String answer) {
         var ansCorrect = false;
-        for (var ans : QuestionsGenerator.AllQuestions.get(currentQuestionId).answer)
+        for (var ans : generator.AllQuestions.get(currentQuestionId).answer)
             if (answer.toLowerCase().equals(ans.toLowerCase()))
                 ansCorrect = true;
         if (ansCorrect)
