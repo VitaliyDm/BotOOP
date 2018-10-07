@@ -16,13 +16,13 @@ public class Dialog {
     protected HashMap<commands, String> commandsToString = new HashMap<>();
 
     public Dialog(BufferedReader input, BufferedWriter output, QuestionHelper helper) throws IOException {
-        stringToCommands.put("/string", commands.start);
+        stringToCommands.put("/start", commands.start);
         stringToCommands.put("/end", commands.end);
         stringToCommands.put("/help", commands.help);
         stringToCommands.put("/questionHelp", commands.questionHelp);
         stringToCommands.put("/next", commands.next);
 
-        commandsToString.put(commands.start, "/string");
+        commandsToString.put(commands.start, "/start");
         commandsToString.put(commands.end, "/end");
         commandsToString.put(commands.help, "/help");
         commandsToString.put(commands.questionHelp, "/questionHelp");
@@ -39,7 +39,18 @@ public class Dialog {
         var questionShowed = false;
         while (true){
             var userAnswer = inputReader.readLine();
-            switch (stringToCommands.get(userAnswer)) {
+            var parsedCommand = stringToCommands.get(userAnswer);
+            if (parsedCommand == null && questionShowed) {
+                if (questionHelper.checkAnswer(userAnswer)) {
+                    outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", commandsToString.get(commands.next), commandsToString.get(commands.end)));
+                    questionShowed = false;
+                } else
+                    outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", commandsToString.get(commands.help), commandsToString.get(commands.next)));
+                outputWritter.flush();
+            }
+            if (parsedCommand == null)
+                continue;
+            switch (parsedCommand) {
                 case start:
                     outputWritter.write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     questionShowed = true;
@@ -56,14 +67,6 @@ public class Dialog {
                     outputWritter.write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     questionShowed = true;
                     break;
-                default:
-                    if (questionShowed) {
-                        if (questionHelper.checkAnswer(userAnswer)) {
-                            outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", commandsToString.get(commands.next), commandsToString.get(commands.end)));
-                            questionShowed = false;
-                        } else
-                            outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", commandsToString.get(commands.help), commandsToString.get(commands.next)));
-                    }
             }
             outputWritter.flush();
         }
