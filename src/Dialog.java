@@ -11,9 +11,14 @@ public class Dialog {
     private BufferedReader inputReader;
     private QuestionHelper questionHelper;
 
-    protected enum commands {start, end, help, questionHelp, next}
+    protected enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next");
+        private String command;
+        commands(String s) {
+            this.command = s;
+        }
+        public String getCommand(){return command;}
+    }
     protected HashMap<String, commands> stringToCommands = new HashMap<>();
-    protected HashMap<commands, String> commandsToString = new HashMap<>();
 
     public Dialog(BufferedReader input, BufferedWriter output, QuestionHelper helper) throws IOException {
         stringToCommands.put("/start", commands.start);
@@ -21,12 +26,6 @@ public class Dialog {
         stringToCommands.put("/help", commands.help);
         stringToCommands.put("/questionHelp", commands.questionHelp);
         stringToCommands.put("/next", commands.next);
-
-        commandsToString.put(commands.start, "/start");
-        commandsToString.put(commands.end, "/end");
-        commandsToString.put(commands.help, "/help");
-        commandsToString.put(commands.questionHelp, "/questionHelp");
-        commandsToString.put(commands.next, "/next");
 
         inputReader = input;
         outputWritter = output;
@@ -42,10 +41,10 @@ public class Dialog {
             var parsedCommand = stringToCommands.get(userAnswer);
             if (parsedCommand == null && questionShowed) {
                 if (questionHelper.checkAnswer(userAnswer)) {
-                    outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", commandsToString.get(commands.next), commandsToString.get(commands.end)));
+                    outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", commands.next.getCommand(), commands.end.getCommand()));
                     questionShowed = false;
                 } else
-                    outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", commandsToString.get(commands.help), commandsToString.get(commands.next)));
+                    outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", commands.help.getCommand(), commands.next.getCommand()));
                 outputWritter.flush();
             }
             if (parsedCommand == null)
@@ -56,7 +55,7 @@ public class Dialog {
                     questionShowed = true;
                     break;
                 case end:
-                    break;
+                    return;
                 case help:
                     outputWritter.write(showHelp());
                     break;
@@ -75,7 +74,7 @@ public class Dialog {
     protected String showHelp(){
         var botInfo = "Вы можете сыграть с ботом в игру: \"Что? Где? Когда?\"";
         var botCommandsInfo = String.format("Чтоб начать игру введите \"%s\", для завершения игры введите: \"%s\"," +
-                " Для получения справки введите: \"%s\"", commandsToString.get(commands.start), commandsToString.get(commands.end), commandsToString.get(commands.help));
+                " Для получения справки введите: \"%s\"", commands.start.getCommand(), commands.end.getCommand(), commands.help.getCommand());
         return String.format("Об игре:\n\r %s\n\r Команды: \n\r%s\n\r", botInfo, botCommandsInfo);
     }
 }
