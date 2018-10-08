@@ -1,4 +1,5 @@
 import questions.QuestionHelper;
+import questions.QuestionsGenerator;
 
 import java.io.*;
 
@@ -7,10 +8,11 @@ public class UserSession {
     Dialog userDialog;
     QuestionHelper questionHelper;
 
-    public UserSession() throws IOException {
+    public UserSession(QuestionsGenerator questionsGenerator) throws IOException {
         userScore = 0;
-        questionHelper = new QuestionHelper();
+        questionHelper = new QuestionHelper(questionsGenerator);
         userDialog =
                 new Dialog(new BufferedReader(new InputStreamReader(System.in)), new BufferedWriter(new OutputStreamWriter(System.out)), questionHelper);
+        userDialog.mainDialog();
     }
 }

@@ -2,28 +2,38 @@ package questions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 public class QuestionHelper {
-    private ArrayList<Float> userQuestions = new ArrayList<>();
-    private float currentQuestionId;
+    private ArrayList<String> userQuestions = new ArrayList<>();
+    private String currentQuestionId;
+    private QuestionsGenerator generator;
+    private Iterator<String> questionsIterator;
 
-    public QuestionHelper() {
-        userQuestions = QuestionsGenerator.GetQuizQuestions();
+    public QuestionHelper(QuestionsGenerator questionsGenerator) {
+        generator = questionsGenerator;
+        userQuestions = generator.GetQuizQuestions();
+        questionsIterator = userQuestions.iterator();
     }
 
-    public String GetNextQuestion() {
-        currentQuestionId = userQuestions.iterator().next();
-        return QuestionsGenerator.AllQuestions.get(currentQuestionId).question;
+    public String getNextQuestion() {
+        try{
+            currentQuestionId = questionsIterator.next();
+        } catch (Exception e){
+            questionsIterator = userQuestions.iterator();
+            currentQuestionId = questionsIterator.next();
+        }
+        return generator.AllQuestions.get(currentQuestionId).question;
     }
 
-    public String GetHelp() {
-        return QuestionsGenerator.AllQuestions.get(currentQuestionId).comment;
+    public String getHelp() {
+        return generator.AllQuestions.get(currentQuestionId).comment;
     }
 
-    public boolean CheckAnswer(String answer) {
+    public boolean checkAnswer(String answer) {
         var ansCorrect = false;
-        for (var ans : QuestionsGenerator.AllQuestions.get(currentQuestionId).answer)
+        for (var ans : generator.AllQuestions.get(currentQuestionId).answer)
             if (answer.toLowerCase().equals(ans.toLowerCase()))
                 ansCorrect = true;
         if (ansCorrect)
