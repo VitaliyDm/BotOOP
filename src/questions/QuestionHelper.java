@@ -6,10 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class QuestionHelper {
-    private ArrayList<Float> userQuestions = new ArrayList<>();
-    private float currentQuestionId;
+    private ArrayList<String> userQuestions = new ArrayList<>();
+    private String currentQuestionId;
     private QuestionsGenerator generator;
-    private Iterator<Float> questionsIterator;
+    private Iterator<String> questionsIterator;
 
     public QuestionHelper(QuestionsGenerator questionsGenerator) {
         generator = questionsGenerator;
