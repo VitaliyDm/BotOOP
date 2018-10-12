@@ -19,12 +19,13 @@ final class Question{
 }
 
 public final class QuestionsGenerator {
-    private final File questionsBase = new File("src/questions/question_base.json");
+    private final File questionsBase;
     private static QuestionsTopic questions;
     public static HashMap<String, Question> AllQuestions = new HashMap<>();
 
-    public QuestionsGenerator() throws IOException {
+    public QuestionsGenerator(String pathToQuestions) throws IOException {
         //Чтение вопросов из файла
+        questionsBase = new File(pathToQuestions);
         var gson = new Gson();
         questions = new QuestionsTopic();
         var reader = new FileInputStream(questionsBase);
