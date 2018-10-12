@@ -1,7 +1,5 @@
 package tests;
 
-import javafx.util.Pair;
-import org.junit.Before;
 import org.junit.Test;
 import questions.QuestionHelper;
 import questions.QuestionsGenerator;
@@ -22,7 +20,7 @@ public class QuestionsTest {
         }
     }
 
-    public QuestionsResolvers setDefaultValues(){
+    public QuestionsResolvers getDefaultValues(){
         QuestionsGenerator questionGenerator = null;
         QuestionHelper questionHelper = null;
         try{
@@ -46,9 +44,43 @@ public class QuestionsTest {
 
     @Test
     public void questionsGeneration(){
-        var questionsResolvers = setDefaultValues();
+        var questionsResolvers = getDefaultValues();
         var generatedQuestions = questionsResolvers.generator.getQuizQuestions();
         var generatedQuestionsLength = generatedQuestions.size();
-        assertEquals(generatedQuestionsLength, 2);
+        assertEquals(2, generatedQuestionsLength);
+    }
+
+    @Test
+    public void testGettingQuestion(){
+        var questionsResolvers = getDefaultValues();
+        var question = questionsResolvers.helper.getNextQuestion();
+        assertEquals("Герой Олдоса Хаксли говорит о своей возлюбленной: \"Она пробудила во мне интерес к культуре. Я был наполовину дикарем, когда попал к ней в руки\". Далее герой произносит три слова, которые являются аллюзией на название произведения, впервые опубликованного в 1899 году. Назовите это произведение.",
+                        question);
+        question = questionsResolvers.helper.getNextQuestion();
+        assertEquals("В 1848 году русская гвардия должна была участвовать в подавлении Венгерского восстания, однако в итоге вернулась в казармы, не вступая в боевые действия. Петербургские остряки предположили, что на медали в честь этого похода будут выбиты три слова. Эти три слова входят в название известного произведения. Какого?",
+                        question);
+    }
+
+    @Test
+    public void testGettingQuestionHelp(){
+        var questionsResolvers = getDefaultValues();
+        questionsResolvers.helper.getNextQuestion();
+        assertEquals( "Герой, перефразируя Киплинга, говорит о \"бремени белой женщины\"",
+                        questionsResolvers.helper.getHelp());
+        questionsResolvers.helper.getNextQuestion();
+        assertEquals("Или Туда и обратно", questionsResolvers.helper.getHelp());
+    }
+
+    @Test
+    public void testCheckingAnswers(){
+        var questionsResolver = getDefaultValues();
+        questionsResolver.helper.getNextQuestion();
+        assertTrue(questionsResolver.helper.checkAnswer("Бремя белого человека"));
+        assertTrue(questionsResolver.helper.checkAnswer("Бремя белых"));
+        assertTrue(questionsResolver.helper.checkAnswer("Бремя белых людей"));
+        assertTrue(questionsResolver.helper.checkAnswer("БрЕмЯ БЕЛЫХ людей"));
+        questionsResolver.helper.getNextQuestion();
+        assertTrue(questionsResolver.helper.checkAnswer("Хоббит"));
+        assertTrue(questionsResolver.helper.checkAnswer("ХоББит"));
     }
 }
