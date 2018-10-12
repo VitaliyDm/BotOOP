@@ -19,12 +19,13 @@ final class Question{
 }
 
 public final class QuestionsGenerator {
-    private final File questionsBase = new File("src/questions/question_base.json");
+    private final File questionsBase;
     private static QuestionsTopic questions;
     public static HashMap<String, Question> AllQuestions = new HashMap<>();
 
-    public QuestionsGenerator() throws IOException {
+    public QuestionsGenerator(String pathToQuestions) throws IOException {
         //Чтение вопросов из файла
+        questionsBase = new File(pathToQuestions);
         var gson = new Gson();
         questions = new QuestionsTopic();
         var reader = new FileInputStream(questionsBase);
@@ -35,7 +36,7 @@ public final class QuestionsGenerator {
             AllQuestions.put(question.id, question);
     }
 
-    public ArrayList<String> GetQuizQuestions(){
+    public ArrayList<String> getQuizQuestions(){
         //TODO: Придумать как можно миксовать вопросы и кидать их пользователю
        var res = new ArrayList<String>();
        for (var question : questions.values)
