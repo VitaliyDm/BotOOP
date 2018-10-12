@@ -36,7 +36,7 @@ public final class QuestionsGenerator {
             AllQuestions.put(question.id, question);
     }
 
-    public ArrayList<String> GetQuizQuestions(){
+    public ArrayList<String> getQuizQuestions(){
         //TODO: Придумать как можно миксовать вопросы и кидать их пользователю
        var res = new ArrayList<String>();
        for (var question : questions.values)

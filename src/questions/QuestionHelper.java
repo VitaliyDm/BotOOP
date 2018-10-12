@@ -1,9 +1,7 @@
 package questions;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 
 public class QuestionHelper {
     private ArrayList<String> userQuestions = new ArrayList<>();
@@ -13,7 +11,7 @@ public class QuestionHelper {
 
     public QuestionHelper(QuestionsGenerator questionsGenerator) {
         generator = questionsGenerator;
-        userQuestions = generator.GetQuizQuestions();
+        userQuestions = generator.getQuizQuestions();
         questionsIterator = userQuestions.iterator();
     }
 
