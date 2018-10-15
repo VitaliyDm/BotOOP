@@ -39,16 +39,20 @@ public class Dialog {
         while (true){
             var userAnswer = inputReader.readLine();
             var parsedCommand = stringToCommands.get(userAnswer);
-            if (parsedCommand == null && questionShowed) {
+            if (parsedCommand == null) {
+                if (!questionShowed) {
+                    outputWritter.write(String.format("Неизвестная команда. Введите %s для помоци или %s для следующего вопроса\n\r", commands.help.getCommand(), commands.next.getCommand()));
+                    outputWritter.flush();
+                    continue;
+                }
                 if (questionHelper.checkAnswer(userAnswer)) {
                     outputWritter.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры\n\r", commands.next.getCommand(), commands.end.getCommand()));
                     questionShowed = false;
                 } else
                     outputWritter.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s\n\r", commands.help.getCommand(), commands.next.getCommand()));
                 outputWritter.flush();
-            }
-            if (parsedCommand == null)
                 continue;
+            }
             switch (parsedCommand) {
                 case start:
                     outputWritter.write(String.format("%s \n\r", questionHelper.getNextQuestion()));
