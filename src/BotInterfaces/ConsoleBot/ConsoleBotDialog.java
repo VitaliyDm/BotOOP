@@ -10,6 +10,7 @@ public class ConsoleBotDialog extends Dialog{
     private BufferedWriter writer;
 
     public ConsoleBotDialog(QuestionHelper helper){
+        super(helper);
         questionHelper = helper;
         reader = new BufferedReader(new InputStreamReader(System.in));
         writer = new BufferedWriter(new OutputStreamWriter(System.out));

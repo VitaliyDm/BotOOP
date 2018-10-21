@@ -16,6 +16,10 @@ public abstract class Dialog implements IOInterface {
         public String getCommand(){return command;}
     }
 
+    public Dialog(QuestionHelper helper){
+        questionHelper = helper;
+    }
+
     public void mainDialog() throws IOException {
         var questionShowed = false;
         while (true){
