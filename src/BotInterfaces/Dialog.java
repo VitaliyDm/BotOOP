@@ -16,7 +16,7 @@ public abstract class Dialog implements IOInterface {
         public String getCommand(){return command;}
     }
 
-    public Dialog(QuestionHelper helper){
+    public Dialog(QuestionHelper helper) throws IOException {
         questionHelper = helper;
     }
 

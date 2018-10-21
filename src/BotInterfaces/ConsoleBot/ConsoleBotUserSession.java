@@ -9,6 +9,7 @@ public class ConsoleBotUserSession extends UserSession {
     public ConsoleBotUserSession(QuestionsGenerator questionsGenerator) throws IOException {
         super(questionsGenerator);
         userDialog = new ConsoleBotDialog(questionHelper);
+        startDialog();
     }
 
     @Override

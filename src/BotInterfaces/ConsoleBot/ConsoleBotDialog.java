@@ -9,11 +9,12 @@ public class ConsoleBotDialog extends Dialog{
     private BufferedReader reader;
     private BufferedWriter writer;
 
-    public ConsoleBotDialog(QuestionHelper helper){
+    public ConsoleBotDialog(QuestionHelper helper) throws IOException {
         super(helper);
         questionHelper = helper;
         reader = new BufferedReader(new InputStreamReader(System.in));
         writer = new BufferedWriter(new OutputStreamWriter(System.out));
+        write(showHelp());
     }
 
     @Override
@@ -23,7 +24,7 @@ public class ConsoleBotDialog extends Dialog{
 
     @Override
     public void write(String text) throws IOException {
-        writer.write(text);
+        writer.write(String.format("%s\r\n", text));
         writer.flush();
     }
 }
