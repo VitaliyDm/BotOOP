@@ -3,7 +3,6 @@ package BotInterfaces;
 import questions.QuestionHelper;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public abstract class Dialog implements IOInterface {
     protected QuestionHelper questionHelper;
@@ -16,7 +15,7 @@ public abstract class Dialog implements IOInterface {
         public String getCommand(){return command;}
     }
 
-    public Dialog(QuestionHelper helper) throws IOException {
+    public Dialog(QuestionHelper helper) {
         questionHelper = helper;
     }
 
@@ -40,7 +39,7 @@ public abstract class Dialog implements IOInterface {
                     write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры", commands.next.getCommand(), commands.end.getCommand()));
                     questionShowed = false;
                 } else
-                    write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s", commands.help.getCommand(), commands.next.getCommand()));
+                    write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s", commands.questionHelp.getCommand(), commands.next.getCommand()));
                 continue;
             }
             switch (parsedCommand) {
