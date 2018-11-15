@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class QuestionHelper {
-    private ArrayList<String> userQuestions = new ArrayList<>();
-    private String currentQuestionId;
+    private ArrayList<Question> userQuestions = new ArrayList<>();
+    private Question currentQuestion;
     private QuestionsGenerator generator;
-    private Iterator<String> questionsIterator;
+    private Iterator<Question> questionsIterator;
 
     public QuestionHelper(QuestionsGenerator questionsGenerator) {
         generator = questionsGenerator;
@@ -16,26 +16,24 @@ public class QuestionHelper {
     }
 
     public String getNextQuestion() {
-        try{
-            currentQuestionId = questionsIterator.next();
-        } catch (Exception e){
+        if (!questionsIterator.hasNext()) {
             questionsIterator = userQuestions.iterator();
-            currentQuestionId = questionsIterator.next();
         }
-        return generator.AllQuestions.get(currentQuestionId).question;
+        currentQuestion = questionsIterator.next();
+        return currentQuestion.question;
     }
 
     public String getHelp() {
-        return generator.AllQuestions.get(currentQuestionId).comment;
+        return currentQuestion.comment;
     }
 
     public boolean checkAnswer(String answer) {
         var ansCorrect = false;
-        for (var ans : generator.AllQuestions.get(currentQuestionId).answer)
+        for (var ans : currentQuestion.answer)
             if (answer.toLowerCase().equals(ans.toLowerCase()))
                 ansCorrect = true;
         if (ansCorrect)
-            userQuestions.remove(currentQuestionId);
+            userQuestions.remove(currentQuestion);
         return ansCorrect;
     }
 }

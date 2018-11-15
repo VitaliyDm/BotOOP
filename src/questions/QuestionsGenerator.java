@@ -29,11 +29,10 @@ public final class QuestionsGenerator {
             AllQuestions.put(question.id, question);
     }
 
-    public ArrayList<String> getQuizQuestions(){
-        //TODO: Придумать как можно миксовать вопросы и кидать их пользователю
-       var res = new ArrayList<String>();
+    public ArrayList<Question> getQuizQuestions(){
+       var res = new ArrayList<Question>();
        for (var question : questions.values)
-           res.add(question.id);
+           res.add(question);
        return res;
     }
 }

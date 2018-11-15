@@ -8,8 +8,14 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 public class Bot extends TelegramLongPollingBot {
-    public static void main(String[] args) {
+    private long chatId;
+    public ArrayDeque<String> messagesQueue = new ArrayDeque<>();
+
+    public static void main(String args[]) {
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
         try {
@@ -19,11 +25,12 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
-    public void SendMsg(Message message, String text){
+    public void sendReplyMessage(Message message, String text, boolean setReply){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(message.getChatId());
         sendMessage.enableMarkdown(true);
-        sendMessage.setReplyToMessageId(message.getMessageId());
+        if (setReply)
+            sendMessage.setReplyToMessageId(message.getMessageId());
         sendMessage.setText(text);
         try {
             sendMessage(sendMessage);
@@ -32,15 +39,29 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
+    public void sendReplyMessage(Message message, String text){
+        sendReplyMessage(message, text, false);
+    }
+
+    public void sendMessage(String text){
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.enableMarkdown(true);
+        message.setText(text);
+        try {
+            sendMessage(message);
+        } catch (TelegramApiException e){
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
+        chatId = message.getChatId();
         if (message != null && message.hasText()){
-            if(message.getText().equals("/help")){
-                SendMsg(message, "очки нада?");
-            }else {
-                SendMsg(message, "лови обратно");
-            }
+            System.out.println(message.getText());
+            messagesQueue.addLast(message.getText());
         }
     }
 
