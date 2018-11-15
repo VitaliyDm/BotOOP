@@ -7,7 +7,7 @@ import java.io.IOException;
 public abstract class Dialog implements IOInterface {
     protected QuestionHelper questionHelper;
 
-    protected enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next");
+    public enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next");
         private String command;
         commands(String s) {
             this.command = s;
