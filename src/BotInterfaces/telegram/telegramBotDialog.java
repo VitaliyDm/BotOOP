@@ -1,7 +1,10 @@
 package BotInterfaces.telegram;
 
 import BotInterfaces.Dialog;
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.objects.Message;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
 import questions.QuestionHelper;
 
 import java.io.BufferedReader;
@@ -16,20 +19,32 @@ public class telegramBotDialog extends Dialog {
     public telegramBotDialog(QuestionHelper helper) {
         super(helper);
         questionHelper = helper;
+
+        System.out.println("Зашел в диалог");
+        ApiContextInitializer.init();
+        TelegramBotsApi api = new TelegramBotsApi();
         telegramApi = new Bot();
+        try {
+            System.out.println("захотел поставить регистр");
+            api.registerBot(telegramApi);
+        } catch (TelegramApiException e){
+            e.printStackTrace();
+        }
+        System.out.println("Все поставил");
     }
 
     @Override
     public String read() throws IOException {
         if (!telegramApi.messagesQueue.isEmpty()){
-            var message = telegramApi.messagesQueue.pop();
-            return message;
+            return telegramApi.messagesQueue.pop();
         }
         return null;
     }
 
     @Override
     public void write(String text) throws IOException {
-        telegramApi.sendMessage(text);
+        if (telegramApi.chatId != 0){
+            telegramApi.sendMessage(text);
+        }
     }
 }

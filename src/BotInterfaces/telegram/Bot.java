@@ -12,18 +12,22 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class Bot extends TelegramLongPollingBot {
-    private long chatId;
+    public long chatId;
     public ArrayDeque<String> messagesQueue = new ArrayDeque<>();
 
     public static void main(String args[]) {
+        System.out.println("Зашел в Маин");
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
         try {
+            System.out.println("захотел поставить регистр");
             api.registerBot(new Bot());
         } catch (TelegramApiException e){
             e.printStackTrace();
         }
+        System.out.println("Все поставил");
     }
+
 
     public void sendReplyMessage(Message message, String text, boolean setReply){
         SendMessage sendMessage = new SendMessage();
@@ -46,6 +50,7 @@ public class Bot extends TelegramLongPollingBot {
     public void sendMessage(String text){
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
+        System.out.println(chatId);
         message.enableMarkdown(true);
         message.setText(text);
         try {
@@ -57,10 +62,11 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+        System.out.println("Зашел в onUpdateReceived");
         Message message = update.getMessage();
         chatId = message.getChatId();
         if (message != null && message.hasText()){
-            System.out.println(message.getText());
+            sendMessage(message.getText() + " это отвечает onUpdateReceived");
             messagesQueue.addLast(message.getText());
         }
     }
