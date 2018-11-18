@@ -1,6 +1,5 @@
 import BotInterfaces.ConsoleBot.ConsoleBotUserSession;
-import BotInterfaces.telegram.Bot;
-import BotInterfaces.telegram.telegramBotUserSession;
+import BotInterfaces.telegramBot.telegramBotUserSession;
 import BotInterfaces.UserSession;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
