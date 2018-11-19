@@ -19,11 +19,7 @@ public class telegramBotDialog extends Dialog {
     private telegramBotDialog.Bot telegramApi;
     private ArrayDeque<String> messagesQueue = new ArrayDeque<>();
     private long chatId;
-    private int status
 
-    public status(){
-
-    }
 
     public telegramBotDialog(QuestionHelper helper) throws IOException {
         super(helper);
