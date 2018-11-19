@@ -10,19 +10,21 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import questions.QuestionHelper;
 
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayDeque;
 
 public class telegramBotDialog extends Dialog {
-    private BufferedReader reader;
+    PipedOutputStream pipedOutputStream = new PipedOutputStream();
+    final PipedInputStream in = new PipedInputStream(pipedOutputStream);
     private telegramBotDialog.Bot telegramApi;
     private ArrayDeque<String> messagesQueue = new ArrayDeque<>();
     private long chatId;
 
-    public telegramBotDialog(QuestionHelper helper) {
+    public telegramBotDialog(QuestionHelper helper) throws IOException {
         super(helper);
         questionHelper = helper;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
@@ -36,14 +38,14 @@ public class telegramBotDialog extends Dialog {
 
     @Override
     public String read() throws IOException{
-        while(true){
-            if (!messagesQueue.isEmpty()) return messagesQueue.pop();
+        while(messagesQueue.isEmpty()){
             try {
                 Thread.sleep(25);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        return messagesQueue.pop();
     }
 
     @Override
@@ -69,10 +71,9 @@ public class telegramBotDialog extends Dialog {
         @Override
         public void onUpdateReceived(Update update) {
             Message message = update.getMessage();
-            chatId = message.getChatId();
-            if (message.hasText()){
-                messagesQueue.add(message.getText());
-            }
+            if(chatId == 0)
+                chatId = message.getChatId();
+            messagesQueue.add(message.getText());
         }
 
         @Override
