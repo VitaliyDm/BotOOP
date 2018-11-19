@@ -19,6 +19,11 @@ public class telegramBotDialog extends Dialog {
     private telegramBotDialog.Bot telegramApi;
     private ArrayDeque<String> messagesQueue = new ArrayDeque<>();
     private long chatId;
+    private int status
+
+    public status(){
+
+    }
 
     public telegramBotDialog(QuestionHelper helper) throws IOException {
         super(helper);
@@ -71,8 +76,7 @@ public class telegramBotDialog extends Dialog {
         @Override
         public void onUpdateReceived(Update update) {
             Message message = update.getMessage();
-            if(chatId == 0)
-                chatId = message.getChatId();
+            chatId = message.getChatId();
             messagesQueue.add(message.getText());
         }
 
