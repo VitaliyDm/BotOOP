@@ -19,7 +19,8 @@ public class ConsoleBotDialog extends Dialog{
 
     @Override
     public String read() throws IOException {
-        return reader.readLine();
+        String a = reader.readLine();
+        return a;
     }
 
     @Override

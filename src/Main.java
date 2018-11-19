@@ -1,6 +1,9 @@
 import BotInterfaces.ConsoleBot.ConsoleBotUserSession;
-import BotInterfaces.telegram.telegramBotUserSession;
+import BotInterfaces.telegramBot.telegramBotUserSession;
 import BotInterfaces.UserSession;
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
 import questions.QuestionsGenerator;
 
 import java.io.IOException;
