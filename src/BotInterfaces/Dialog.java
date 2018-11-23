@@ -21,6 +21,7 @@ public abstract class Dialog implements IOInterface {
 
     public void mainDialog() throws IOException {
         var questionShowed = false;
+        var gameStarted = false;
         while (true){
             var userAnswer = read();
             commands parsedCommand = null;
@@ -46,6 +47,7 @@ public abstract class Dialog implements IOInterface {
                 case start:
                     write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     questionShowed = true;
+                    gameStarted = true;
                     break;
                 case end:
                     return;
@@ -53,10 +55,16 @@ public abstract class Dialog implements IOInterface {
                     write(showHelp());
                     break;
                 case questionHelp:
-                    write(String.format("%s \n\r", questionHelper.getHelp()));
+                    if (gameStarted)
+                        write(String.format("%s \n\r", questionHelper.getHelp()));
+                    else
+                        write(showHelp());
                     break;
                 case next:
-                    write(String.format("%s \n\r", questionHelper.getNextQuestion()));
+                    if (gameStarted)
+                        write(String.format("%s \n\r", questionHelper.getNextQuestion()));
+                    else
+                        write(showHelp());
                     questionShowed = true;
                     break;
             }

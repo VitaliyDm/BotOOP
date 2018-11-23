@@ -33,7 +33,9 @@ public class QuestionHelper {
             if (answer.toLowerCase().equals(ans.toLowerCase()))
                 ansCorrect = true;
         if (ansCorrect)
-            userQuestions.remove(currentQuestion);
+        {
+            questionsIterator.remove();
+        }
         return ansCorrect;
     }
 }
