@@ -8,6 +8,7 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import questions.QuestionsGenerator;
+import constants.Constants;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -46,7 +47,7 @@ public class Bot extends TelegramLongPollingBot {
         Long chatId = message.getChatId();
         if(!users.containsKey(chatId)){
             try {
-                users.put(chatId, new telegramBotUserSession(new QuestionsGenerator("src/questions/question_base.json")));
+                users.put(chatId, new telegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS)));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -60,12 +61,12 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "WhoWhereWhenBot";
+        return Constants.BOT_NAME;
     }
 
     @Override
     public String getBotToken() {
-        return "697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go";
+        return Constants.BOT_TOKEN;
     }
 
 }
