@@ -6,7 +6,7 @@ import questions.QuestionsGenerator;
 import java.io.IOException;
 
 public class telegramBotUserSession extends UserSession {
-    public telegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
+    public telegramBotUserSession(QuestionsGenerator questionsGenerator) throws IOException {
         super(questionsGenerator);
         userDialog = new telegramBotDialog(questionHelper);
         startDialog();
