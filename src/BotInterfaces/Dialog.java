@@ -20,7 +20,7 @@ public abstract class Dialog implements IOInterface {
         questionHelper = helper;
     }
 
-    public void mainDialog() throws IOException {
+    public void mainDialog() throws IOException, InterruptedException {
         var questionShowed = false;
         var gameStarted = false;
         while (true){

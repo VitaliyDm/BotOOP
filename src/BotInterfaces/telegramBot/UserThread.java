@@ -10,7 +10,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 
-class UserThread implements Runnable {
+class UserThread extends Thread {
 
     private telegramBotUserSession user;
     public Long LastActivityTime;
@@ -20,20 +20,15 @@ class UserThread implements Runnable {
         user.set_messagesQueue(message);
     }
 
-    void set_bot(Bot bot){
-        user.set_bot(bot);
-    }
-
-    void set_chatId(Long chatId){
-        user.set_chatId(chatId);
+    UserThread(Bot bot, Long chatId) throws IOException {
+        user = new telegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId);
     }
 
     public void run() {
         try {
-            user = new telegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS));
-        } catch (IOException e) {
+            user.startDialog();
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 }

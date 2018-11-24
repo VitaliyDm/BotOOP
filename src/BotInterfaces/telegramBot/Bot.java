@@ -7,7 +7,6 @@ import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
-import questions.QuestionsGenerator;
 import constants.Constants;
 
 import java.io.IOException;
@@ -16,7 +15,7 @@ import java.util.Map;
 
 public final class Bot extends TelegramLongPollingBot {
     private static Bot bot;
-    private static Map<Long, telegramBotUserSession> users = new HashMap<>();
+    private static Map<Long, UserThread> users = new HashMap<>();
 
     public static void main(String[] args) {
         ApiContextInitializer.init();
@@ -47,16 +46,13 @@ public final class Bot extends TelegramLongPollingBot {
         Long chatId = message.getChatId();
         if(!users.containsKey(chatId)){
             try {
-                users.put(chatId, new telegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS)));
+                users.put(chatId, new UserThread(bot, chatId));
+                users.get(chatId).start();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
-        telegramBotUserSession user = users.get(chatId);
-        user.set_bot(bot);
-        user.set_chatId(chatId);
-        user.set_messagesQueue(message.getText());
+        users.get(chatId).set_messagesQueue(message.getText());
     }
 
     @Override
