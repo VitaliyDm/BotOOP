@@ -18,5 +18,5 @@ public abstract class UserSession {
         var b = questionHelper.getScore();
     }
 
-    public abstract void startDialog() throws IOException;
+    public abstract void startDialog() throws IOException, InterruptedException;
 }

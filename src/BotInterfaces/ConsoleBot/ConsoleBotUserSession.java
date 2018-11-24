@@ -6,14 +6,14 @@ import questions.QuestionsGenerator;
 import java.io.IOException;
 
 public class ConsoleBotUserSession extends UserSession {
-    public ConsoleBotUserSession(QuestionsGenerator questionsGenerator) throws IOException {
+    public ConsoleBotUserSession(QuestionsGenerator questionsGenerator) throws IOException, InterruptedException {
         super(questionsGenerator);
         userDialog = new ConsoleBotDialog(questionHelper);
         startDialog();
     }
 
     @Override
-    public void startDialog() throws IOException {
+    public void startDialog() throws IOException, InterruptedException {
         userDialog.mainDialog();
     }
 }

@@ -12,7 +12,7 @@ public class telegramBotUserSession extends UserSession {
     }
 
     @Override
-    public void startDialog() throws IOException {
+    public void startDialog() throws IOException, InterruptedException {
         userDialog.mainDialog();
     }
 

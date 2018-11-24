@@ -27,7 +27,7 @@ class UserThread extends Thread {
     public void run() {
         try {
             user.startDialog();
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }

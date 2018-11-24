@@ -4,10 +4,10 @@ import BotInterfaces.Dialog;
 import questions.QuestionHelper;
 
 import java.io.*;
-import java.util.ArrayDeque;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class telegramBotDialog extends Dialog {
-    ArrayDeque<String> messagesQueue = new ArrayDeque<>();
+    ArrayBlockingQueue messagesQueue = new ArrayBlockingQueue(100, true);
     private Bot bot;
     private Long chatId;
 
@@ -19,11 +19,8 @@ public class telegramBotDialog extends Dialog {
     }
 
     @Override
-    public String read() throws IOException{
-        while(messagesQueue.isEmpty()){
-            Thread.yield();
-        }
-        return messagesQueue.pop();
+    public String read() throws InterruptedException {
+        return (String) messagesQueue.take();
     }
 
     @Override
