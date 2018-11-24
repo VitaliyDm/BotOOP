@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Bot extends TelegramLongPollingBot {
+public final class Bot extends TelegramLongPollingBot {
     private static Bot bot;
     private static Map<Long, telegramBotUserSession> users = new HashMap<>();
 
