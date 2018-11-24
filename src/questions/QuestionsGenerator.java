@@ -1,13 +1,14 @@
 package questions;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.*;
-
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 final class QuestionsTopic{
     public List<Question> values;
@@ -34,5 +35,14 @@ public final class QuestionsGenerator {
        for (var question : questions.values)
            res.add(question);
        return res;
+    }
+
+    public ArrayList<Question> getQuestionsById(ArrayList<String> questionsId){
+        var result = new ArrayList<Question>();
+        for (var question : questions.values)
+            for (var id : questionsId)
+                if (id == question.id)
+                    result.add(question);
+        return result;
     }
 }

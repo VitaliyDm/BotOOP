@@ -38,4 +38,11 @@ public class QuestionHelper {
         }
         return ansCorrect;
     }
+
+    public ArrayList<String> getQuestionsId(){
+        var result = new ArrayList<String>();
+        for(var question : userQuestions)
+            result.add(question.id);
+        return result;
+    }
 }

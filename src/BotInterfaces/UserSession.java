@@ -1,7 +1,5 @@
 package BotInterfaces;
 
-import BotInterfaces.ConsoleBot.ConsoleBotDialog;
-import BotInterfaces.Dialog;
 import questions.QuestionHelper;
 import questions.QuestionsGenerator;
 
@@ -15,6 +13,11 @@ public abstract class UserSession {
     public UserSession(QuestionsGenerator questionsGenerator) {
         userScore = 0;
         questionHelper = new QuestionHelper(questionsGenerator);
+    }
+
+    public void SaveSession(){
+        var a = questionHelper.getQuestionsId();
+        var b = userScore;
     }
 
     public abstract void startDialog() throws IOException;
