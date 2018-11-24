@@ -8,11 +8,14 @@ import java.util.ArrayDeque;
 
 public class telegramBotDialog extends Dialog {
     ArrayDeque<String> messagesQueue = new ArrayDeque<>();
-    Bot bot;
-    Long chatId;
+    private Bot bot;
+    private Long chatId;
 
-    telegramBotDialog(QuestionHelper helper) throws IOException {
+    telegramBotDialog(QuestionHelper helper, Bot bot, Long chatId) throws IOException {
         super(helper);
+
+        this.bot = bot;
+        this.chatId = chatId;
     }
 
     @Override

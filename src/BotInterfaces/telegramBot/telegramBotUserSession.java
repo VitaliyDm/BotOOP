@@ -8,36 +8,16 @@ import java.io.IOException;
 public class telegramBotUserSession extends UserSession {
     public telegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
         super(questionsGenerator);
-        userDialog = new telegramBotDialog(questionHelper);
-        startDialog();
+        userDialog = new telegramBotDialog(questionHelper, bot, chatId);
     }
 
     @Override
     public void startDialog() throws IOException {
-        Thread myThready = new Thread(new Runnable()
-        {
-            public void run()  //Этот метод будет выполняться в побочном потоке
-            {
-                try {
-                    userDialog.mainDialog();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        myThready.start();
+        userDialog.mainDialog();
     }
 
     void set_messagesQueue(String message){
         ((telegramBotDialog) userDialog).messagesQueue.add(message);
-    }
-
-    void set_bot(Bot bot){
-        ((telegramBotDialog) userDialog).bot = bot;
-    }
-
-    public void set_chatId(Long chatId){
-        ((telegramBotDialog) userDialog).chatId = chatId;
     }
 }
 
