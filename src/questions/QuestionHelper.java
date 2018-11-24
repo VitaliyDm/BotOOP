@@ -8,6 +8,7 @@ public class QuestionHelper {
     private Question currentQuestion;
     private QuestionsGenerator generator;
     private Iterator<Question> questionsIterator;
+    private int score;
 
     public QuestionHelper(QuestionsGenerator questionsGenerator) {
         generator = questionsGenerator;
@@ -35,6 +36,7 @@ public class QuestionHelper {
         if (ansCorrect)
         {
             questionsIterator.remove();
+            score += 10;
         }
         return ansCorrect;
     }
@@ -44,5 +46,9 @@ public class QuestionHelper {
         for(var question : userQuestions)
             result.add(question.id);
         return result;
+    }
+
+    public int getScore(){
+        return score;
     }
 }

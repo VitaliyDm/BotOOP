@@ -7,7 +7,8 @@ import java.io.IOException;
 public abstract class Dialog implements IOInterface {
     protected QuestionHelper questionHelper;
 
-    public enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next");
+    public enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next"),
+        score("/score");
         private String command;
         commands(String s) {
             this.command = s;
@@ -67,6 +68,9 @@ public abstract class Dialog implements IOInterface {
                         write(showHelp());
                     questionShowed = true;
                     break;
+                case score:
+                    write(String.valueOf(questionHelper.getScore()));
+                    break;
             }
         }
     }
@@ -74,7 +78,9 @@ public abstract class Dialog implements IOInterface {
     protected String showHelp(){
         var botInfo = "Вы можете сыграть с ботом в игру: \"Что? Где? Когда?\"";
         var botCommandsInfo = String.format("Чтоб начать игру введите \"%s\", для завершения игры введите: \"%s\"," +
-                " Для получения справки введите: \"%s\"", commands.start.getCommand(), commands.end.getCommand(), commands.help.getCommand());
+                " Для получения справки введите: \"%s\", чтобы узнать счет введите: \"%s\"",
+                commands.start.getCommand(), commands.end.getCommand(), commands.help.getCommand(),
+                commands.score.getCommand());
         return String.format("Об игре:\n\r %s\n\r Команды: \n\r%s", botInfo, botCommandsInfo);
     }
 }
