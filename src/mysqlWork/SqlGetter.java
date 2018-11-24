@@ -1,5 +1,7 @@
 package mysqlWork;
 
+import constants.SqlConnectionConst;
+
 import java.sql.*;
 
 public abstract class SqlGetter {
@@ -12,7 +14,7 @@ public abstract class SqlGetter {
     protected void getRequest(String query){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(ConnectionConst.url, ConnectionConst.user, ConnectionConst.password);
+            connection = DriverManager.getConnection(SqlConnectionConst.url, SqlConnectionConst.user, SqlConnectionConst.password);
             statement = connection.createStatement();
             resultSet = statement.executeQuery(query);
 
