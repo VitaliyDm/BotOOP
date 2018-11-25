@@ -5,12 +5,14 @@ import mysqlWork.SqlGetter;
 
 import java.sql.SQLException;
 
-public class GetTelegramSession extends SqlGetter {
-    private SessionInfo gettedSession = new SessionInfo();
+public class TelegramSessionGetter extends SqlGetter {
+    private SessionInfo gettedSession = null;
 
     @Override
     protected void requestAction() throws SQLException {
+        gettedSession = null;
         if (resultSet.next()){
+            gettedSession = new SessionInfo();
             gettedSession.Score = resultSet.getInt("score");
             gettedSession.UserQuestions = resultSet.getString("userQuestions");
         }

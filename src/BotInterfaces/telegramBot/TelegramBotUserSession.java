@@ -6,15 +6,19 @@ import questions.QuestionsGenerator;
 import java.io.IOException;
 
 public class TelegramBotUserSession extends UserSession {
+    private Long currentChatId;
+
     public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
         super(questionsGenerator);
         userDialog = new TelegramBotDialog(questionHelper, bot, chatId);
+        currentChatId = chatId;
     }
 
     @Override
-    public void serializeSession() {
+    public void saveSession() {
         var serializedString = questionHelper.getQuestionsId().toString();
         serializedString = serializedString.substring(1, serializedString.length());
+        Bot.dataBaseSetter.setDataToDataBase(currentChatId, serializedString, questionHelper.getScore());
     }
 
     @Override

@@ -13,7 +13,7 @@ public class ConsoleBotUserSession extends UserSession {
     }
 
     @Override
-    public void serializeSession() {
+    public void saveSession() {
     }
 
     @Override

@@ -16,6 +16,10 @@ public class QuestionHelper {
         questionsIterator = userQuestions.iterator();
     }
 
+    public void setQuestionsById(ArrayList<String> questionsId){
+        userQuestions = generator.getQuestionsById(questionsId);
+    }
+
     public String getNextQuestion() {
         if (!questionsIterator.hasNext()) {
             questionsIterator = userQuestions.iterator();
@@ -51,4 +55,5 @@ public class QuestionHelper {
     public int getScore(){
         return score;
     }
+    public void setScore(int newScore){ score = newScore; }
 }

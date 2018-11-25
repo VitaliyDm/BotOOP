@@ -2,12 +2,14 @@ package BotInterfaces.telegramBot;
 
 import constants.Constants;
 
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Map;
 
 public class ControlThread implements Runnable{
-    private HashMap<Long, UserThread> activeThreads = new HashMap<>();
+    private Map<Long, UserThread> activeThreads = new HashMap<>();
 
-    public ControlThread(HashMap<Long, UserThread> usersThreads){
+    public ControlThread(Map<Long, UserThread> usersThreads){
         activeThreads = usersThreads;
     }
 
@@ -24,6 +26,11 @@ public class ControlThread implements Runnable{
 
     private void checkAndRemoveInactiveThreads(){
         for (var sessionId : activeThreads.keySet()){
+            var currentTime = Calendar.getInstance().getTime().getTime();
+            if (activeThreads.get(sessionId).LastActivityTime + Constants.TIMEOUT< currentTime){
+                activeThreads.get(sessionId).UserSession.saveSession();
+                activeThreads.remove(sessionId);
+            }
         }
     }
 }
