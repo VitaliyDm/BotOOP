@@ -7,7 +7,6 @@ import java.sql.*;
 public abstract class SqlSetter {
     private Connection connection;
     private Statement statement;
-    protected ResultSet resultSet;
 
     protected void setRequest(String query){
         try {
@@ -28,11 +27,6 @@ public abstract class SqlSetter {
             }
             try {
                 statement.close();
-            } catch (SQLException se) {
-                /*can't do anything */
-            }
-            try {
-                resultSet.close();
             } catch (SQLException se) {
                 /*can't do anything */
             }
