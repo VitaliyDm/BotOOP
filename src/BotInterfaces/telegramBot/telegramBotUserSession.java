@@ -6,9 +6,15 @@ import questions.QuestionsGenerator;
 import java.io.IOException;
 
 public class telegramBotUserSession extends UserSession {
-    public telegramBotUserSession(QuestionsGenerator questionsGenerator) throws IOException {
+    public telegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
         super(questionsGenerator);
         userDialog = new telegramBotDialog(questionHelper, bot, chatId);
+    }
+
+    @Override
+    public void serializeSession() {
+        var serializedString = questionHelper.getQuestionsId().toString();
+        serializedString = serializedString.substring(1, serializedString.length());
     }
 
     @Override
