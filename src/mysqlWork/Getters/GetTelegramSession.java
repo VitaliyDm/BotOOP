@@ -10,9 +10,10 @@ public class GetTelegramSession extends SqlGetter {
 
     @Override
     protected void requestAction() throws SQLException {
-        resultSet.next();
-        gettedSession.Score = resultSet.getInt("score");
-        gettedSession.UserQuestions = resultSet.getString("userQuestions");
+        if (resultSet.next()){
+            gettedSession.Score = resultSet.getInt("score");
+            gettedSession.UserQuestions = resultSet.getString("userQuestions");
+        }
     }
 
     public SessionInfo getUserSession(Long chatId){
