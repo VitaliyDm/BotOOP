@@ -13,10 +13,7 @@ public abstract class UserSession {
         questionHelper = new QuestionHelper(questionsGenerator);
     }
 
-    public void SaveSession(){
-        var a = questionHelper.getQuestionsId();
-        var b = questionHelper.getScore();
-    }
+    public abstract void serializeSession();
 
     public abstract void startDialog() throws IOException, InterruptedException;
 }

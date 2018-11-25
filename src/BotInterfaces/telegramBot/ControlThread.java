@@ -1,6 +1,5 @@
 package BotInterfaces.telegramBot;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ControlThread implements Runnable{

@@ -13,6 +13,10 @@ public class ConsoleBotUserSession extends UserSession {
     }
 
     @Override
+    public void serializeSession() {
+    }
+
+    @Override
     public void startDialog() throws IOException, InterruptedException {
         userDialog.mainDialog();
     }

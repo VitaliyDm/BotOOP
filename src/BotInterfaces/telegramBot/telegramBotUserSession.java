@@ -12,6 +12,12 @@ public class telegramBotUserSession extends UserSession {
     }
 
     @Override
+    public void serializeSession() {
+        var serializedString = questionHelper.getQuestionsId().toString();
+        serializedString = serializedString.substring(1, serializedString.length());
+    }
+
+    @Override
     public void startDialog() throws IOException, InterruptedException {
         userDialog.mainDialog();
     }
