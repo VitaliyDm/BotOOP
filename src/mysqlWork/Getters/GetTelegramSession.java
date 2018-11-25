@@ -10,13 +10,13 @@ public class GetTelegramSession extends SqlGetter {
 
     @Override
     protected void requestAction() throws SQLException {
-        var chatId = resultSet.getLong("chatId");
+        resultSet.next();
         gettedSession.Score = resultSet.getInt("score");
         gettedSession.UserQuestions = resultSet.getString("userQuestions");
     }
 
     public SessionInfo getUserSession(Long chatId){
-        getRequest(String.format("select * from users where chatId=%d", chatId));
+        getRequest(String.format("select * from botoop.session where chatId=%d", chatId));
         return gettedSession;
     }
 }

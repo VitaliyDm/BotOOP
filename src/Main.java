@@ -1,6 +1,6 @@
 import BotInterfaces.ConsoleBot.ConsoleBotUserSession;
-import questions.QuestionsGenerator;
 import constants.Constants;
+import questions.QuestionsGenerator;
 
 import java.io.IOException;
 
@@ -11,7 +11,5 @@ public class Main{
         } catch (IOException | InterruptedException e){
             e.printStackTrace();
         }
-
-
     }
 }
