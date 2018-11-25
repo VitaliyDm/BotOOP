@@ -51,7 +51,9 @@ public abstract class Dialog implements IOInterface {
                     gameStarted = true;
                     break;
                 case end:
-                    return;
+                    questionShowed = false;
+                    gameStarted = false;
+                    break;
                 case help:
                     write(showHelp());
                     break;
