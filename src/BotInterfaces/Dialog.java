@@ -6,6 +6,11 @@ import java.io.IOException;
 
 public abstract class Dialog implements IOInterface {
     protected QuestionHelper questionHelper;
+    protected Boolean isEnd = false;
+
+    public Boolean getIsEnd(){
+        return isEnd;
+    }
 
     public enum commands {start("/start"), end("/end"), help("/help"), questionHelp("/questionHelp"), next("/next"),
         score("/score");
@@ -51,8 +56,7 @@ public abstract class Dialog implements IOInterface {
                     gameStarted = true;
                     break;
                 case end:
-                    questionShowed = false;
-                    gameStarted = false;
+                    isEnd = true;
                     break;
                 case help:
                     write(showHelp());
@@ -80,7 +84,7 @@ public abstract class Dialog implements IOInterface {
     protected String showHelp(){
         var botInfo = "Вы можете сыграть с ботом в игру: \"Что? Где? Когда?\"";
         var botCommandsInfo = String.format("Чтоб начать игру введите \"%s\", для завершения игры введите: \"%s\"," +
-                " Для получения справки введите: \"%s\", чтобы узнать счет введите: \"%s\"",
+                        " Для получения справки введите: \"%s\", чтобы узнать счет введите: \"%s\"",
                 commands.start.getCommand(), commands.end.getCommand(), commands.help.getCommand(),
                 commands.score.getCommand());
         return String.format("Об игре:\n\r %s\n\r Команды: \n\r%s", botInfo, botCommandsInfo);

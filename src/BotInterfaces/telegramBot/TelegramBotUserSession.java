@@ -1,5 +1,6 @@
 package BotInterfaces.telegramBot;
 
+import BotInterfaces.Dialog;
 import BotInterfaces.UserSession;
 import questions.QuestionsGenerator;
 
@@ -12,6 +13,10 @@ public class TelegramBotUserSession extends UserSession {
         super(questionsGenerator);
         userDialog = new TelegramBotDialog(questionHelper, bot, chatId);
         currentChatId = chatId;
+    }
+
+    Dialog getUserDialog(){
+        return userDialog;
     }
 
     @Override

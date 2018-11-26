@@ -26,8 +26,14 @@ public class ControlThread implements Runnable{
 
     private void checkAndRemoveInactiveThreads(){
         for (var sessionId : activeThreads.keySet()){
+            if (activeThreads.get(sessionId).UserSession.getUserDialog().getIsEnd()){
+                activeThreads.remove(sessionId);
+                continue;
+            }
+
             var currentTime = Calendar.getInstance().getTime().getTime();
-            if (activeThreads.get(sessionId).LastActivityTime + Constants.TIMEOUT< currentTime){
+            if (activeThreads.get(sessionId).LastActivityTime + Constants.TIMEOUT< currentTime
+                    || activeThreads.get(sessionId).UserSession.getUserDialog().getIsEnd()){
                 activeThreads.get(sessionId).UserSession.saveSession();
                 activeThreads.remove(sessionId);
             }
