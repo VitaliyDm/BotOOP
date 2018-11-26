@@ -9,4 +9,11 @@ public class TelegramSessionSetter extends SqlSetter {
                         chatId,userScore, userQuestions)
         );
     }
+
+    public void updateDataInDataBase(Long chatId, String userQuestions, Integer userScore){
+        setRequest(
+                String.format("UPDATE botoop.session SET score='%d', userQuestions='%s' WHERE chatID=%d",
+                        userScore, userQuestions, chatId)
+        );
+    }
 }

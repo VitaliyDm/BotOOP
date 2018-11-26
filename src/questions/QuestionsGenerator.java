@@ -41,7 +41,7 @@ public final class QuestionsGenerator {
         var result = new ArrayList<Question>();
         for (var question : questions.values)
             for (var id : questionsId)
-                if (id == question.id)
+                if (question.id.equals(id))
                     result.add(question);
         return result;
     }

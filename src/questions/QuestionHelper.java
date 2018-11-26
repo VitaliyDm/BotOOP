@@ -18,6 +18,7 @@ public class QuestionHelper {
 
     public void setQuestionsById(ArrayList<String> questionsId){
         userQuestions = generator.getQuestionsById(questionsId);
+        questionsIterator = userQuestions.iterator();
     }
 
     public String getNextQuestion() {
