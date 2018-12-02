@@ -9,6 +9,8 @@ import java.io.IOException;
 public class TelegramBotUserSession extends UserSession {
     private Long currentChatId;
 
+    public Long getCurrentChatId() { return currentChatId; }
+
     public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
         super(questionsGenerator);
         userDialog = new TelegramBotDialog(questionHelper, bot, chatId);

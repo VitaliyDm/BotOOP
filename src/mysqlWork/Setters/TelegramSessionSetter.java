@@ -16,4 +16,11 @@ public class TelegramSessionSetter extends SqlSetter {
                         userScore, userQuestions, chatId)
         );
     }
+
+    public void deleteDataInDataBase(Long chatId){
+        setRequest(
+                String.format("DELETE FROM botoop.session WHERE chatID=%d",
+                        chatId)
+        );
+    }
 }

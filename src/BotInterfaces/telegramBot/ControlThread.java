@@ -26,7 +26,9 @@ public class ControlThread implements Runnable{
 
     private void checkAndRemoveInactiveThreads(){
         for (var sessionId : activeThreads.keySet()){
-            if (activeThreads.get(sessionId).UserSession.getUserDialog().getIsEnd()){
+            var userSession = activeThreads.get(sessionId).UserSession;
+            if (userSession.getUserDialog().getIsEnd()){
+                Bot.dataBaseSetter.deleteDataInDataBase(userSession.getCurrentChatId());
                 activeThreads.remove(sessionId);
                 continue;
             }
