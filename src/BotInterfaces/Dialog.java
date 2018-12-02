@@ -26,8 +26,11 @@ public abstract class Dialog implements IOInterface {
     }
 
     public void mainDialog() throws IOException, InterruptedException {
+        mainDialog(false);
+    }
+
+    public void mainDialog(boolean gameStarted) throws IOException, InterruptedException {
         var questionShowed = false;
-        var gameStarted = false;
         while (true){
             var userAnswer = read();
             commands parsedCommand = null;

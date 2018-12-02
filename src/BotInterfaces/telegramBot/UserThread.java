@@ -22,7 +22,7 @@ class UserThread extends Thread {
 
     public void run() {
         try {
-            UserSession.startDialog();
+            UserSession.startDialog(UserSession.GameStarted);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

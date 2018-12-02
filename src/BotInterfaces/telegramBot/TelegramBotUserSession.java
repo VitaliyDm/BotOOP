@@ -36,6 +36,11 @@ public class TelegramBotUserSession extends UserSession {
         userDialog.mainDialog();
     }
 
+    @Override
+    public void startDialog(boolean gameStarted) throws IOException, InterruptedException {
+        userDialog.mainDialog(gameStarted);
+    }
+
     void setMessagesQueue(String message){
         ((TelegramBotDialog) userDialog).messagesQueue.add(message);
     }

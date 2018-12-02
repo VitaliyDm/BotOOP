@@ -20,4 +20,9 @@ public class ConsoleBotUserSession extends UserSession {
     public void startDialog() throws IOException, InterruptedException {
         userDialog.mainDialog();
     }
+
+    @Override
+    public void startDialog(boolean gameStarted) throws IOException, InterruptedException {
+        return;
+    }
 }
