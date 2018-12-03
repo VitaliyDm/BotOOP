@@ -12,12 +12,11 @@ import static org.junit.Assert.assertTrue;
 
 public class QuestionHelperTest {
     private QuestionHelper questionHelper = null;
-    private QuestionsGenerator questionsGenerator = null;
 
     @Before
     public void getDefaultValues(){
         try{
-            questionsGenerator = new QuestionsGenerator("src/tests/testQuestions.json");
+            var questionsGenerator = new QuestionsGenerator("src/tests/testQuestions.json");
             questionHelper = new QuestionHelper(questionsGenerator);
         } catch (IOException e){
             //pass
@@ -47,11 +46,17 @@ public class QuestionHelperTest {
     public void testCheckingAnswers(){
         questionHelper.getNextQuestion();
         assertTrue(questionHelper.checkAnswer("Бремя белого человека"));
-        assertTrue(questionHelper.checkAnswer("Бремя белых"));
-        assertTrue(questionHelper.checkAnswer("Бремя белых людей"));
-        assertTrue(questionHelper.checkAnswer("БрЕмЯ БЕЛЫХ людей"));
         questionHelper.getNextQuestion();
         assertTrue(questionHelper.checkAnswer("Хоббит"));
+
+        questionHelper.restartGenerator();
+        questionHelper.getNextQuestion();
+        assertTrue(questionHelper.checkAnswer("Бремя белых"));
+        questionHelper.getNextQuestion();
         assertTrue(questionHelper.checkAnswer("ХоББит"));
+
+        questionHelper.restartGenerator();
+        questionHelper.getNextQuestion();
+        assertTrue(questionHelper.checkAnswer("Бремя белых людей"));
     }
 }

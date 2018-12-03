@@ -12,6 +12,10 @@ public class QuestionHelper {
 
     public QuestionHelper(QuestionsGenerator questionsGenerator) {
         generator = questionsGenerator;
+        restartGenerator();
+    }
+
+    public void restartGenerator(){
         userQuestions = generator.getQuizQuestions();
         questionsIterator = userQuestions.iterator();
     }

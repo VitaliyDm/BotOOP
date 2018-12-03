@@ -54,6 +54,8 @@ public abstract class Dialog implements IOInterface {
             }
             switch (parsedCommand) {
                 case start:
+                    if (gameStarted)
+                        questionHelper.restartGenerator();
                     write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     questionShowed = true;
                     gameStarted = true;
