@@ -3,11 +3,10 @@ package BotInterfaces.telegramBot;
 import constants.Constants;
 
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.Map;
 
 public class ControlThread implements Runnable{
-    private Map<Long, UserThread> activeThreads = new HashMap<>();
+    private final Map<Long, UserThread> activeThreads;
 
     public ControlThread(Map<Long, UserThread> usersThreads){
         activeThreads = usersThreads;
