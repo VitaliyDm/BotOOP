@@ -2,23 +2,20 @@ package tests;
 
 import org.junit.Before;
 import org.junit.Test;
-import questions.QuestionHelper;
 import questions.QuestionsGenerator;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class QuestionsGeneratorTest {
-    private QuestionHelper questionHelper = null;
     private QuestionsGenerator questionsGenerator = null;
 
     @Before
     public void getDefaultValues(){
         try{
             questionsGenerator = new QuestionsGenerator("src/tests/testQuestions.json");
-            questionHelper = new QuestionHelper(questionsGenerator);
         } catch (IOException e){
             //pass
         }
