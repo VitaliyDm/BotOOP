@@ -14,12 +14,14 @@ import constants.Constants;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public final class Bot extends TelegramLongPollingBot {
     private static Bot bot;
-    private static Map<Long, UserThread> users = new HashMap<>();
-    private static ControlThread controlThread;
-    public static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
+    static Logger log = Logger.getLogger(Bot.class.getName());
+    static final Map<Long, UserThread> users = new HashMap<>();
+    static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
     public static TelegramSessionGetter dataBaseGetter = new TelegramSessionGetter();
 
     public static void main(String[] args) {
@@ -29,9 +31,9 @@ public final class Bot extends TelegramLongPollingBot {
         try {
             api.registerBot(bot);
         } catch (TelegramApiException e){
-            e.printStackTrace();
+            log.log(Level.SEVERE, e.getMessage(), e);
         }
-        controlThread = new ControlThread(users);
+        ControlThread controlThread = new ControlThread();
         controlThread.run();
     }
 
@@ -43,7 +45,7 @@ public final class Bot extends TelegramLongPollingBot {
         try {
             sendMessage(message);
         } catch (TelegramApiException e){
-            e.printStackTrace();
+            log.log(Level.SEVERE, e.getMessage(), e);
         }
     }
 
@@ -52,19 +54,21 @@ public final class Bot extends TelegramLongPollingBot {
         Message message = update.getMessage();
         Long chatId = message.getChatId();
         System.out.println(chatId);
-        if(!users.containsKey(chatId)){
-            try {
-                var session = dataBaseGetter.getUserSession(chatId);
-                users.put(chatId, new UserThread(bot, chatId));
-                if (session != null){
-                    users.get(chatId).UserSession.setSession(session.UserQuestions, session.Score);
+        synchronized (users.get(chatId).LastActivityTime) {
+            if(!users.containsKey(chatId)){
+                try {
+                    var session = dataBaseGetter.getUserSession(chatId);
+                    users.put(chatId, new UserThread(bot, chatId));
+                    if (session != null){
+                        users.get(chatId).UserSession.setSession(session.UserQuestions, session.Score);
+                    }
+                    users.get(chatId).start();
+                } catch (IOException e) {
+                    log.log(Level.SEVERE, e.getMessage(), e);
                 }
-                users.get(chatId).start();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+            users.get(chatId).setMessagesQueue(message.getText());
         }
-        users.get(chatId).setMessagesQueue(message.getText());
     }
 
     @Override
