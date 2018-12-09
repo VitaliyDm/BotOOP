@@ -54,7 +54,7 @@ public final class Bot extends TelegramLongPollingBot {
         Message message = update.getMessage();
         Long chatId = message.getChatId();
         System.out.println(chatId);
-        synchronized (users.get(chatId).LastActivityTime) {
+        synchronized (users) {
             if(!users.containsKey(chatId)){
                 try {
                     var session = dataBaseGetter.getUserSession(chatId);
