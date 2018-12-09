@@ -3,40 +3,35 @@ package BotInterfaces.telegramBot;
 import constants.Constants;
 
 import java.util.Calendar;
-import java.util.Map;
+import java.util.logging.Level;
 
 public class ControlThread implements Runnable{
-    private final Map<Long, UserThread> activeThreads;
-
-    public ControlThread(Map<Long, UserThread> usersThreads){
-        activeThreads = usersThreads;
-    }
-
     public void run(){
         while (true){
             checkAndRemoveInactiveThreads();
             try {
                 Thread.sleep(Constants.TIMEOUT);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Bot.log.log(Level.SEVERE, e.getMessage(), e);
             }
         }
     }
 
     private void checkAndRemoveInactiveThreads(){
-        for (var sessionId : activeThreads.keySet()){
-            var userSession = activeThreads.get(sessionId).UserSession;
-            if (userSession.getUserDialog().getIsEnd()){
-                Bot.dataBaseSetter.deleteDataInDataBase(userSession.getCurrentChatId());
-                activeThreads.remove(sessionId);
-                continue;
-            }
+        synchronized (Bot.users) {
+            for (var sessionId : Bot.users.keySet()){
+                var userSession = Bot.users.get(sessionId).UserSession;
+                if (userSession.getUserDialog().getIsEnd()){
+                    Bot.dataBaseSetter.deleteDataInDataBase(userSession.getCurrentChatId());
+                    Bot.users.remove(sessionId);
+                    continue;
+                }
 
-            var currentTime = Calendar.getInstance().getTime().getTime();
-            if (activeThreads.get(sessionId).LastActivityTime + Constants.TIMEOUT< currentTime
-                    || activeThreads.get(sessionId).UserSession.getUserDialog().getIsEnd()){
-                activeThreads.get(sessionId).UserSession.saveSession();
-                activeThreads.remove(sessionId);
+                var currentTime = Calendar.getInstance().getTime().getTime();
+                if (Bot.users.get(sessionId).LastActivityTime + Constants.TIMEOUT< currentTime){
+                    userSession.saveSession();
+                    Bot.users.remove(sessionId);
+                }
             }
         }
     }
