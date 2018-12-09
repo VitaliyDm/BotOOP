@@ -1,26 +1,21 @@
 package BotInterfaces.ConsoleBot;
 
-import BotInterfaces.Dialog;
-import questions.QuestionHelper;
+import BotInterfaces.IOInterface;
 
 import java.io.*;
 
-public class ConsoleBotDialog extends Dialog{
+public class ConsoleIOManager implements IOInterface {
     private BufferedReader reader;
     private BufferedWriter writer;
 
-    public ConsoleBotDialog(QuestionHelper helper) throws IOException {
-        super(helper);
-        questionHelper = helper;
+    public ConsoleIOManager(){
         reader = new BufferedReader(new InputStreamReader(System.in));
         writer = new BufferedWriter(new OutputStreamWriter(System.out));
-        write(showHelp());
     }
 
     @Override
     public String read() throws IOException {
-        String a = reader.readLine();
-        return a;
+        return reader.readLine();
     }
 
     @Override

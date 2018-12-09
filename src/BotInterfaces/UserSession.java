@@ -24,6 +24,5 @@ public abstract class UserSession {
         GameStarted = true;
     }
 
-    public abstract void startDialog() throws IOException, InterruptedException;
     public abstract void startDialog(boolean gameStarted) throws IOException, InterruptedException;
 }

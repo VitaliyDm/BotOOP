@@ -4,9 +4,10 @@ import questions.QuestionHelper;
 
 import java.io.IOException;
 
-public abstract class Dialog implements IOInterface {
+public class Dialog{
     protected QuestionHelper questionHelper;
     protected Boolean isEnd = false;
+    private IOInterface ioManager;
 
     public Boolean getIsEnd(){
         return isEnd;
@@ -21,8 +22,9 @@ public abstract class Dialog implements IOInterface {
         public String getCommand(){return command;}
     }
 
-    public Dialog(QuestionHelper helper) {
+    public Dialog(QuestionHelper helper, IOInterface ioInterface) {
         questionHelper = helper;
+        ioManager = ioInterface;
     }
 
     public void mainDialog() throws IOException, InterruptedException {
@@ -31,8 +33,9 @@ public abstract class Dialog implements IOInterface {
 
     public void mainDialog(boolean gameStarted) throws IOException, InterruptedException {
         var questionShowed = false;
+        ioManager.write(showHelp());
         while (true){
-            var userAnswer = read();
+            var userAnswer = ioManager.read();
             commands parsedCommand = null;
 
             for (var currentCommand : commands.values()) {
@@ -42,21 +45,21 @@ public abstract class Dialog implements IOInterface {
 
             if (parsedCommand == null) {
                 if (!questionShowed) {
-                    write(String.format("Неизвестная команда. Введите %s для помоци или %s для следующего вопроса", commands.help.getCommand(), commands.next.getCommand()));
+                    ioManager.write(String.format("Неизвестная команда. Введите %s для помоци или %s для следующего вопроса", commands.help.getCommand(), commands.next.getCommand()));
                     continue;
                 }
                 if (questionHelper.checkAnswer(userAnswer)) {
-                    write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры", commands.next.getCommand(), commands.end.getCommand()));
+                    ioManager.write(String.format("Ответ верный!\nДля продолжения введите %s, или введите %s для завершения игры", commands.next.getCommand(), commands.end.getCommand()));
                     questionShowed = false;
                 } else
-                    write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s", commands.questionHelp.getCommand(), commands.next.getCommand()));
+                    ioManager.write(String.format("Неверный ответ!\nДля подсказки по вопросу введите: %s либо перейти к следующему вопросу: %s", commands.questionHelp.getCommand(), commands.next.getCommand()));
                 continue;
             }
             switch (parsedCommand) {
                 case start:
                     if (gameStarted)
                         questionHelper.restartGenerator();
-                    write(String.format("%s \n\r", questionHelper.getNextQuestion()));
+                    ioManager.write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     questionShowed = true;
                     gameStarted = true;
                     break;
@@ -64,23 +67,23 @@ public abstract class Dialog implements IOInterface {
                     isEnd = true;
                     break;
                 case help:
-                    write(showHelp());
+                    ioManager.write(showHelp());
                     break;
                 case questionHelp:
                     if (gameStarted)
-                        write(String.format("%s \n\r", questionHelper.getHelp()));
+                        ioManager.write(String.format("%s \n\r", questionHelper.getHelp()));
                     else
-                        write(showHelp());
+                        ioManager.write(showHelp());
                     break;
                 case next:
                     if (gameStarted)
-                        write(String.format("%s \n\r", questionHelper.getNextQuestion()));
+                        ioManager.write(String.format("%s \n\r", questionHelper.getNextQuestion()));
                     else
-                        write(showHelp());
+                        ioManager.write(showHelp());
                     questionShowed = true;
                     break;
                 case score:
-                    write(String.valueOf(questionHelper.getScore()));
+                    ioManager.write(String.valueOf(questionHelper.getScore()));
                     break;
             }
         }

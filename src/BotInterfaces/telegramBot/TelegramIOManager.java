@@ -1,19 +1,16 @@
 package BotInterfaces.telegramBot;
 
-import BotInterfaces.Dialog;
-import questions.QuestionHelper;
+import BotInterfaces.IOInterface;
 
-import java.io.*;
+import java.io.IOException;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class TelegramBotDialog extends Dialog {
+public class TelegramIOManager implements IOInterface {
     ArrayBlockingQueue messagesQueue = new ArrayBlockingQueue(100, true);
     private Bot bot;
     private Long chatId;
 
-    TelegramBotDialog(QuestionHelper helper, Bot bot, Long chatId) throws IOException {
-        super(helper);
-
+    TelegramIOManager(Bot bot, Long chatId){
         this.bot = bot;
         this.chatId = chatId;
     }
