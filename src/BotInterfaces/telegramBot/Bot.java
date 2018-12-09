@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public final class Bot extends TelegramLongPollingBot {
@@ -24,7 +25,8 @@ public final class Bot extends TelegramLongPollingBot {
     static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
     public static TelegramSessionGetter dataBaseGetter = new TelegramSessionGetter();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        LogManager.getLogManager().readConfiguration(Bot.class.getResourceAsStream("logging.properties"));
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
         bot = new Bot();
@@ -54,7 +56,7 @@ public final class Bot extends TelegramLongPollingBot {
         Message message = update.getMessage();
         Long chatId = message.getChatId();
         System.out.println(chatId);
-        synchronized (users.get(chatId).LastActivityTime) {
+        synchronized (users) {
             if(!users.containsKey(chatId)){
                 try {
                     var session = dataBaseGetter.getUserSession(chatId);

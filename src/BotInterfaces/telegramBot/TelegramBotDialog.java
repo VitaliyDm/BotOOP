@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class TelegramBotDialog extends Dialog {
-    ArrayBlockingQueue messagesQueue = new ArrayBlockingQueue(100, true);
+    ArrayBlockingQueue messagesQueue = new ArrayBlockingQueue(1, true);
     private Bot bot;
     private Long chatId;
 

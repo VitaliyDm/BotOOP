@@ -3,7 +3,7 @@ package BotInterfaces.telegramBot;
 import constants.Constants;
 
 import java.util.Calendar;
-import java.util.logging.Level;;
+import java.util.logging.Level;
 
 public class ControlThread implements Runnable{
     public void run(){

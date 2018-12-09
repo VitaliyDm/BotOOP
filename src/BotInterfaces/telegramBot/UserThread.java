@@ -5,6 +5,7 @@ import questions.QuestionsGenerator;
 
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.logging.Level;
 
 class UserThread extends Thread {
 
@@ -17,6 +18,7 @@ class UserThread extends Thread {
     }
 
     UserThread(Bot bot, Long chatId) throws IOException {
+        LastActivityTime = Calendar.getInstance().getTime().getTime();
         UserSession = new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId);
     }
 
@@ -24,7 +26,7 @@ class UserThread extends Thread {
         try {
             UserSession.startDialog();
         } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+            Bot.log.log(Level.SEVERE, e.getMessage(), e);
         }
     }
 }
