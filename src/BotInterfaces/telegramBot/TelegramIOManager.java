@@ -3,10 +3,11 @@ package BotInterfaces.telegramBot;
 import BotInterfaces.IOInterface;
 
 import java.io.IOException;
+import java.util.ArrayDeque;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class TelegramIOManager implements IOInterface {
-    ArrayBlockingQueue messagesQueue = new ArrayBlockingQueue(100, true);
+    ArrayDeque messagesQueue = new ArrayDeque();
     private Bot bot;
     private Long chatId;
 
@@ -16,12 +17,18 @@ public class TelegramIOManager implements IOInterface {
     }
 
     @Override
-    public String read() throws InterruptedException {
-        return (String) messagesQueue.take();
+    public String read() {
+        while(true){
+            if(messagesQueue.isEmpty()){
+                Thread.yield();
+            }
+            break;
+        }
+        return (String) messagesQueue.pop();
     }
 
     @Override
-    public void write(String text) throws IOException {
+    public void write(String text) {
         bot.sendMessage(text, chatId);
     }
 }
