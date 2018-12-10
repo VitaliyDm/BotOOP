@@ -1,5 +1,6 @@
 package BotInterfaces.ConsoleBot;
 
+import BotInterfaces.Dialog;
 import BotInterfaces.UserSession;
 import questions.QuestionsGenerator;
 
@@ -8,8 +9,9 @@ import java.io.IOException;
 public class ConsoleBotUserSession extends UserSession {
     public ConsoleBotUserSession(QuestionsGenerator questionsGenerator) throws IOException, InterruptedException {
         super(questionsGenerator);
-        userDialog = new ConsoleBotDialog(questionHelper);
-        startDialog();
+        var ioManager = new ConsoleIOManager();
+        userDialog = new Dialog(questionHelper, ioManager);
+        startDialog(false);
     }
 
     @Override
@@ -17,7 +19,7 @@ public class ConsoleBotUserSession extends UserSession {
     }
 
     @Override
-    public void startDialog() throws IOException, InterruptedException {
-        userDialog.mainDialog();
+    public void startDialog(boolean gameStarted) throws IOException, InterruptedException {
+        userDialog.mainDialog(gameStarted);
     }
 }

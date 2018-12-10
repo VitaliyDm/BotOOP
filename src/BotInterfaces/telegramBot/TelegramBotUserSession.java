@@ -8,12 +8,14 @@ import java.io.IOException;
 
 public class TelegramBotUserSession extends UserSession {
     private Long currentChatId;
+    private TelegramIOManager ioManager;
 
     public Long getCurrentChatId() { return currentChatId; }
 
     public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
         super(questionsGenerator);
-        userDialog = new TelegramBotDialog(questionHelper, bot, chatId);
+        ioManager = new TelegramIOManager(bot, chatId);
+        userDialog = new Dialog(questionHelper, ioManager);
         currentChatId = chatId;
     }
 
@@ -32,12 +34,12 @@ public class TelegramBotUserSession extends UserSession {
     }
 
     @Override
-    public void startDialog() throws IOException, InterruptedException {
-        userDialog.mainDialog();
+    public void startDialog(boolean gameStarted) throws IOException, InterruptedException {
+        userDialog.mainDialog(gameStarted);
     }
 
     void setMessagesQueue(String message){
-        ((TelegramBotDialog) userDialog).messagesQueue.add(message);
+        ioManager.messagesQueue.add(message);
     }
 }
 
