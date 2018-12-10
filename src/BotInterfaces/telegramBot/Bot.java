@@ -55,22 +55,27 @@ public final class Bot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
         Long chatId = message.getChatId();
-        System.out.println(chatId);
+        System.out.println('s' + chatId);
         synchronized (users) {
-            if(!users.containsKey(chatId)){
-                try {
-                    var session = dataBaseGetter.getUserSession(chatId);
-                    users.put(chatId, new UserThread(bot, chatId));
-                    if (session != null){
-                        users.get(chatId).UserSession.setSession(session.UserQuestions, session.Score);
-                    }
-                    users.get(chatId).start();
-                } catch (IOException e) {
-                    log.log(Level.SEVERE, e.getMessage(), e);
-                }
+            users.computeIfAbsent(chatId, key -> createUserSession(key));
+            var session = dataBaseGetter.getUserSession(chatId);
+            var currentUserSession = users.get(chatId);
+            if (session != null){
+                currentUserSession.UserSession.setSession(session.UserQuestions, session.Score);
             }
-            users.get(chatId).setMessagesQueue(message.getText());
+            currentUserSession.start();
+            currentUserSession.setMessagesQueue(message.getText());
         }
+    }
+
+    private UserThread createUserSession(long chatId){
+        try {
+            return new UserThread(bot, chatId);
+        } catch (IOException e) {
+            log.log(Level.SEVERE, e.getMessage(), e);
+        }
+
+        return null;
     }
 
     @Override
