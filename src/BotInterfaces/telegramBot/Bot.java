@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 public final class Bot extends TelegramLongPollingBot {
     private static Bot bot;
     static Logger log = Logger.getLogger(Bot.class.getName());
-    static final Map<Long, UserThread> users = new HashMap<>();
+    static Map<Long, UserThread> users = new HashMap<>();
     static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
     public static TelegramSessionGetter dataBaseGetter = new TelegramSessionGetter();
 
@@ -72,20 +72,19 @@ public final class Bot extends TelegramLongPollingBot {
         Long chatId = message.getChatId();
         System.out.println('s' + chatId);
         synchronized (users) {
-            users.computeIfAbsent(chatId, key -> createUserSession(key));
+            users.putIfAbsent(chatId, createUserSession(chatId, message));
+        }
+    }
+
+    private UserThread createUserSession(long chatId, Message message){
+        try {
+            var currentUserSession = new UserThread(bot, chatId);
             var session = dataBaseGetter.getUserSession(chatId);
-            var currentUserSession = users.get(chatId);
             if (session != null){
                 currentUserSession.UserSession.setSession(session.UserQuestions, session.Score);
             }
             currentUserSession.start();
             currentUserSession.setMessagesQueue(message.getText());
-        }
-    }
-
-    private UserThread createUserSession(long chatId){
-        try {
-            return new UserThread(bot, chatId);
         } catch (IOException e) {
             log.log(Level.SEVERE, e.getMessage(), e);
         }

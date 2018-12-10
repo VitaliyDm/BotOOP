@@ -2,9 +2,7 @@ package BotInterfaces.telegramBot;
 
 import BotInterfaces.IOInterface;
 
-import java.io.IOException;
 import java.util.ArrayDeque;
-import java.util.concurrent.ArrayBlockingQueue;
 
 public class TelegramIOManager implements IOInterface {
     ArrayDeque messagesQueue = new ArrayDeque();
@@ -21,6 +19,7 @@ public class TelegramIOManager implements IOInterface {
         while(true){
             if(messagesQueue.isEmpty()){
                 Thread.yield();
+                continue;
             }
             break;
         }
