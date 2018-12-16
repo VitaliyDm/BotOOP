@@ -72,11 +72,13 @@ public final class Bot extends TelegramLongPollingBot {
         Long chatId = message.getChatId();
         System.out.println('s' + chatId);
         synchronized (users) {
-            users.putIfAbsent(chatId, createUserSession(chatId, message));
+            users.computeIfAbsent(chatId, id -> createUserSession(id));
+            var userSession = users.get(chatId);
+            userSession.setMessagesQueue(message.getText());
         }
     }
 
-    private UserThread createUserSession(long chatId, Message message){
+    private UserThread createUserSession(long chatId){
         try {
             var currentUserSession = new UserThread(bot, chatId);
             var session = dataBaseGetter.getUserSession(chatId);
@@ -84,7 +86,7 @@ public final class Bot extends TelegramLongPollingBot {
                 currentUserSession.UserSession.setSession(session.UserQuestions, session.Score);
             }
             currentUserSession.start();
-            currentUserSession.setMessagesQueue(message.getText());
+            return currentUserSession;
         } catch (IOException e) {
             log.log(Level.SEVERE, e.getMessage(), e);
         }
