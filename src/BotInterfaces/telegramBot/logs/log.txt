@@ -1,1358 +1,676 @@
-дек. 17, 2018 2:07:33 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Module execution: 400ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Interceptors creation: 223ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: TypeListeners & ProvisionListener creation: 8ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Scopes creation: 80ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Converters creation: 4ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Binding creation: 37ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Module annotated method scanners creation: 3ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Private environment creation: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
+дек. 22, 2018 11:17:37 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Module execution: 458ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Interceptors creation: 500ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: TypeListeners & ProvisionListener creation: 23ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Scopes creation: 65ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Converters creation: 5ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Binding creation: 22ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Module annotated method scanners creation: 5ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Private environment creation: 35ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
 FINE: Injector construction: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Binding initialization: 1ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Binding indexing: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Collecting injection requests: 1ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.BytecodeGen newFastClassForMember
-FINE: Loading class org.telegram.telegrambots.updatesreceivers.DefaultBotSession FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@5fa7e7ff
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.BytecodeGen newFastClassForMember
-FINE: Loading class org.telegram.telegrambots.updatesreceivers.DefaultWebhook FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@5fa7e7ff
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Binding validation: 245ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Static validation: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Instance member validation: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Binding initialization: 4ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Binding indexing: 3ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Collecting injection requests: 2ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.BytecodeGen newFastClassForMember
+FINE: Loading class org.telegram.telegrambots.updatesreceivers.DefaultBotSession FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@6ed3ef1
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.BytecodeGen newFastClassForMember
+FINE: Loading class org.telegram.telegrambots.updatesreceivers.DefaultWebhook FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@6ed3ef1
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Binding validation: 358ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Static validation: 1ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Instance member validation: 1ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
 FINE: Provider verification: 2ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
 FINE: Static member injection: 1ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
 FINE: Instance injection: 1ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.util.Stopwatch resetAndLog
-FINE: Preloading singletons: 12ms
-дек. 17, 2018 2:07:34 ДП com.google.inject.internal.BytecodeGen newFastClassForMember
-FINE: Loading class org.telegram.telegrambots.bots.DefaultBotOptions FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@5fa7e7ff
-дек. 17, 2018 2:07:36 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.util.Stopwatch resetAndLog
+FINE: Preloading singletons: 18ms
+дек. 22, 2018 11:17:38 PM com.google.inject.internal.BytecodeGen newFastClassForMember
+FINE: Loading class org.telegram.telegrambots.bots.DefaultBotOptions FastClass with jdk.internal.loader.ClassLoaders$AppClassLoader@6ed3ef1
+дек. 22, 2018 11:17:41 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:07:36 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:17:41 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:07:36 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:17:41 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-дек. 17, 2018 2:07:36 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:17:41 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 0][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-дек. 17, 2018 2:07:36 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:41 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Opening connection {s}->https://api.telegram.org:443
-дек. 17, 2018 2:07:36 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+дек. 22, 2018 11:17:41 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
 FINE: Connecting to api.telegram.org/149.154.167.220:443
-дек. 17, 2018 2:07:36 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
+дек. 22, 2018 11:17:41 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
 FINE: Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 0
-дек. 17, 2018 2:07:36 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-дек. 17, 2018 2:07:36 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-дек. 17, 2018 2:07:36 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+дек. 22, 2018 11:17:41 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+дек. 22, 2018 11:17:41 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+дек. 22, 2018 11:17:41 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
 FINE: Starting handshake
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE: Secure session established
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated protocol: TLSv1.2
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer alternative names: [api.telegram.org, www.api.telegram.org]
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connection established 172.18.13.230:55627<->149.154.167.220:443
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+FINE: Connection established 10.202.0.2:50342<->149.154.167.220:443
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request GET /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/setwebhook HTTP/1.1
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-0 >> GET /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/setwebhook HTTP/1.1
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-0 >> Host: api.telegram.org
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-0 >> Connection: Keep-Alive
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-0 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 >> "GET /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/setwebhook HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
-FINE: http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
+FINE: http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 >> "[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
-FINE: http-outgoing-0 << "Date: Sun, 16 Dec 2018 21:07:37 GMT[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
+FINE: http-outgoing-0 << "Date: Sat, 22 Dec 2018 18:17:29 GMT[\r][\n]"
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Content-Length: 68[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:42 PM org.apache.http.wire wire
 FINE: http-outgoing-0 << "{"ok":true,"result":true,"description":"Webhook is already deleted"}"
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << HTTP/1.1 200 OK
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Server: nginx/1.12.2
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-0 << Date: Sun, 16 Dec 2018 21:07:37 GMT
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-0 << Date: Sat, 22 Dec 2018 18:17:29 GMT
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Content-Type: application/json
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Content-Length: 68
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Connection: keep-alive
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:42 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-0 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection [id: 0][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection released: [id: 0][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager shutdown
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager shutdown
 FINE: Connection manager is shutting down
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection close
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection close
 FINE: http-outgoing-0: Close connection
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager shutdown
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager shutdown
 FINE: Connection manager shut down
-дек. 17, 2018 2:07:37 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:17:42 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:07:37 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:17:42 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 100]
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Opening connection {s}->https://api.telegram.org:443
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+дек. 22, 2018 11:17:42 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
 FINE: Connecting to api.telegram.org/149.154.167.220:443
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
 FINE: Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 75000
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+дек. 22, 2018 11:17:42 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
 FINE: Starting handshake
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE: Secure session established
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated protocol: TLSv1.2
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer alternative names: [api.telegram.org, www.api.telegram.org]
-дек. 17, 2018 2:07:37 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:43 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connection established 172.18.13.230:55628<->149.154.167.220:443
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
+дек. 22, 2018 11:17:43 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+FINE: Connection established 10.202.0.2:50344<->149.154.167.220:443
+дек. 22, 2018 11:17:43 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
 FINE: http-outgoing-1: set socket timeout to 75000
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:43 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:43 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:07:37 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:43 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> charset: UTF-8
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Length: 59
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Host: api.telegram.org
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Connection: Keep-Alive
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:07:37 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:17:43 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Length: 59[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
+FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "[\r][\n]"
-дек. 17, 2018 2:07:37 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:43 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "{"offset":1,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Date: Sun, 16 Dec 2018 21:07:37 GMT[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 << "Date: Sat, 22 Dec 2018 18:17:32 GMT[\r][\n]"
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Content-Length: 502[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 << "Content-Length: 496[\r][\n]"
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "{"ok":true,"result":[{"update_id":434541199,[\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << ""message":{"message_id":2448,"from":{"id":425429259,"is_bot":false,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","language_code":"ru"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994291,"text":"\u041f"}}]}"
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 << "{"ok":true,"result":[{"update_id":434541236,[\n]"
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 << ""message":{"message_id":2497,"from":{"id":499030130,"is_bot":false,"first_name":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","last_name":"\u0413\u0443\u043b\u044f\u0435\u0432","username":"BatyaMorty","language_code":"ru"},"chat":{"id":499030130,"first_name":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","last_name":"\u0413\u0443\u043b\u044f\u0435\u0432","username":"BatyaMorty","type":"private"},"date":1545502652,"text":"\u043d\u043f"}}]}"
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << HTTP/1.1 200 OK
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Server: nginx/1.12.2
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Date: Sun, 16 Dec 2018 21:07:37 GMT
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-1 << Date: Sat, 22 Dec 2018 18:17:32 GMT
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Content-Type: application/json
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Content-Length: 502
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-1 << Content-Length: 496
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Connection: keep-alive
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection [id: 1][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection released: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:38 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:17:46 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:07:38 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:17:46 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
 FINE: http-outgoing-1: set socket timeout to 75000
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:46 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> charset: UTF-8
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Length: 67
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Host: api.telegram.org
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Connection: Keep-Alive
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:07:38 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:17:46 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Length: 67[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "[\r][\n]"
-дек. 17, 2018 2:07:38 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "{"offset":434541200,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:07:38 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:17:46 PM org.apache.http.wire wire
+FINE: http-outgoing-1 >> "{"offset":434541237,"limit":100,"timeout":50,"method":"getupdates"}"
+дек. 22, 2018 11:17:47 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:07:38 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:17:47 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 100]
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Opening connection {s}->https://api.telegram.org:443
-дек. 17, 2018 2:07:38 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
 FINE: Connecting to api.telegram.org/149.154.167.220:443
-дек. 17, 2018 2:07:38 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
 FINE: Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 75000
-дек. 17, 2018 2:07:38 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-дек. 17, 2018 2:07:38 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-дек. 17, 2018 2:07:38 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
+FINE: Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
 FINE: Starting handshake
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE: Secure session established
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated protocol: TLSv1.2
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  peer alternative names: [api.telegram.org, www.api.telegram.org]
-дек. 17, 2018 2:07:39 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
+дек. 22, 2018 11:17:47 PM org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
 FINE:  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connection established 172.18.13.230:55630<->149.154.167.220:443
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
+FINE: Connection established 10.202.0.2:50347<->149.154.167.220:443
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
 FINE: http-outgoing-2: set socket timeout to 75000
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> charset: UTF-8
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Content-Length: 463
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Host: api.telegram.org
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Connection: Keep-Alive
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Content-Length: 463[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "{"chat_id":"425429259","text":"[0xd0][0x9e][0xd0][0xb1] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd0][0xb5]:\n\r [0xd0][0x92][0xd1][0x8b] [0xd0][0xbc][0xd0][0xbe][0xd0][0xb6][0xd0][0xb5][0xd1][0x82][0xd0][0xb5] [0xd1][0x81][0xd1][0x8b][0xd0][0xb3][0xd1][0x80][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd1][0x81] [0xd0][0xb1][0xd0][0xbe][0xd1][0x82][0xd0][0xbe][0xd0][0xbc] [0xd0][0xb2] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x83]: \"[0xd0][0xa7][0xd1][0x82][0xd0][0xbe]? [0xd0][0x93][0xd0][0xb4][0xd0][0xb5]? [0xd0][0x9a][0xd0][0xbe][0xd0][0xb3][0xd0][0xb4][0xd0][0xb0]?\"\n\r [0xd0][0x9a][0xd0][0xbe][0xd0][0xbc][0xd0][0xb0][0xd0][0xbd][0xd0][0xb4][0xd1][0x8b]: \n\r[0xd0][0xa7][0xd1][0x82][0xd0][0xbe][0xd0][0xb1] [0xd0][0xbd][0xd0][0xb0][0xd1][0x87][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x83] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] \"/start\", [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb7][0xd0][0xb0][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x8b] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/end\", [0xd0][0x94][0xd0][0xbb][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbe][0xd0][0xbb][0xd1][0x83][0xd1][0x87][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd1][0x81][0xd0][0xbf][0xd1][0x80][0xd0][0xb0][0xd0][0xb2][0xd0][0xba][0xd0][0xb8] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/help\", [0xd1][0x87][0xd1][0x82][0xd0][0xbe][0xd0][0xb1][0xd1][0x8b] [0xd1][0x83][0xd0][0xb7][0xd0][0xbd][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd1][0x81][0xd1][0x87][0xd0][0xb5][0xd1][0x82] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/score\"","parse_mode":"Markdown","method":"sendmessage"}"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 >> "{"chat_id":"499030130","text":"[0xd0][0x9e][0xd0][0xb1] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd0][0xb5]:\n\r [0xd0][0x92][0xd1][0x8b] [0xd0][0xbc][0xd0][0xbe][0xd0][0xb6][0xd0][0xb5][0xd1][0x82][0xd0][0xb5] [0xd1][0x81][0xd1][0x8b][0xd0][0xb3][0xd1][0x80][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd1][0x81] [0xd0][0xb1][0xd0][0xbe][0xd1][0x82][0xd0][0xbe][0xd0][0xbc] [0xd0][0xb2] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x83]: \"[0xd0][0xa7][0xd1][0x82][0xd0][0xbe]? [0xd0][0x93][0xd0][0xb4][0xd0][0xb5]? [0xd0][0x9a][0xd0][0xbe][0xd0][0xb3][0xd0][0xb4][0xd0][0xb0]?\"\n\r [0xd0][0x9a][0xd0][0xbe][0xd0][0xbc][0xd0][0xb0][0xd0][0xbd][0xd0][0xb4][0xd1][0x8b]: \n\r[0xd0][0xa7][0xd1][0x82][0xd0][0xbe][0xd0][0xb1] [0xd0][0xbd][0xd0][0xb0][0xd1][0x87][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x83] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] \"/start\", [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb7][0xd0][0xb0][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x8b] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/end\", [0xd0][0x94][0xd0][0xbb][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbe][0xd0][0xbb][0xd1][0x83][0xd1][0x87][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd1][0x81][0xd0][0xbf][0xd1][0x80][0xd0][0xb0][0xd0][0xb2][0xd0][0xba][0xd0][0xb8] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/help\", [0xd1][0x87][0xd1][0x82][0xd0][0xbe][0xd0][0xb1][0xd1][0x8b] [0xd1][0x83][0xd0][0xb7][0xd0][0xbd][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd1][0x81][0xd1][0x87][0xd0][0xb5][0xd1][0x82] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5]: \"/score\"","parse_mode":"Markdown","method":"sendmessage"}"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Date: Sun, 16 Dec 2018 21:07:38 GMT[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "Date: Sat, 22 Dec 2018 18:17:34 GMT[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Content-Length: 1493[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "Content-Length: 1487[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "{"ok":true,"result":{"message_id":2449,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994458,"text":"\u041e\u0431 \u0438\u0433\u0440\u0435:\n \u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0441\u044b\u0433\u0440\u0430\u0442\u044c \u0441 \u0431\u043e\u0442\u043e\u043c \u0432 \u0438\u0433\u0440\u0443: \"\u0427\u0442\u043e? \u0413\u0434\u0435? \u041a\u043e\u0433\u0434\u0430?\"\n \u041a\u043e\u043c\u0430\u043d\u0434\u044b: \n\u0427\u0442\u043e\u0431 \u043d\u0430\u0447\u0430\u0442\u044c \u0438\u0433\u0440\u0443 \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \"/start\", \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u0438\u0433\u0440\u044b \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/end\", \u0414\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u0441\u043f\u0440\u0430\u0432\u043a\u0438 \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/help\", \u0447\u0442\u043e\u0431\u044b \u0443\u0437\u043d\u0430\u0442\u044c \u0441\u0447\u0435\u0442 \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/score\"","entities":[{"offset":100,"length":6,"type":"bot_command"},{"offset":139,"length":4,"type":"bot_command"},{"offset":178,"length":5,"type":"bot_command"},{"offset":214,"length":6,"type":"bot_command"}]}}"
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "{"ok":true,"result":{"message_id":2498,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":499030130,"first_name":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","last_name":"\u0413\u0443\u043b\u044f\u0435\u0432","username":"BatyaMorty","type":"private"},"date":1545502654,"text":"\u041e\u0431 \u0438\u0433\u0440\u0435:\n \u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0441\u044b\u0433\u0440\u0430\u0442\u044c \u0441 \u0431\u043e\u0442\u043e\u043c \u0432 \u0438\u0433\u0440\u0443: \"\u0427\u0442\u043e? \u0413\u0434\u0435? \u041a\u043e\u0433\u0434\u0430?\"\n \u041a\u043e\u043c\u0430\u043d\u0434\u044b: \n\u0427\u0442\u043e\u0431 \u043d\u0430\u0447\u0430\u0442\u044c \u0438\u0433\u0440\u0443 \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \"/start\", \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u0438\u0433\u0440\u044b \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/end\", \u0414\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u0441\u043f\u0440\u0430\u0432\u043a\u0438 \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/help\", \u0447\u0442\u043e\u0431\u044b \u0443\u0437\u043d\u0430\u0442\u044c \u0441\u0447\u0435\u0442 \u0432\u0432\u0435\u0434\u0438\u0442\u0435: \"/score\"","entities":[{"offset":100,"length":6,"type":"bot_command"},{"offset":139,"length":4,"type":"bot_command"},{"offset":178,"length":5,"type":"bot_command"},{"offset":214,"length":6,"type":"bot_command"}]}}"
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << HTTP/1.1 200 OK
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Server: nginx/1.12.2
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Date: Sun, 16 Dec 2018 21:07:38 GMT
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-2 << Date: Sat, 22 Dec 2018 18:17:34 GMT
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Content-Type: application/json
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Content-Length: 1493
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-2 << Content-Length: 1487
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Connection: keep-alive
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection [id: 2][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection released: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:39 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:17:47 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:07:39 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:17:47 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
 FINE: http-outgoing-2: set socket timeout to 75000
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> charset: UTF-8
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Content-Length: 215
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Host: api.telegram.org
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Connection: Keep-Alive
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-2 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Content-Length: 215[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 >> "[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "{"chat_id":"425429259","text":"[0xd0][0x9d][0xd0][0xb5][0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbd][0xd0][0xb0][0xd1][0x8f] [0xd0][0xba][0xd0][0xbe][0xd0][0xbc][0xd0][0xb0][0xd0][0xbd][0xd0][0xb4][0xd0][0xb0]. [0xd0][0x92][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] /help [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbe][0xd0][0xbc][0xd0][0xbe][0xd1][0x86][0xd0][0xb8] [0xd0][0xb8][0xd0][0xbb][0xd0][0xb8] /next [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd1][0x81][0xd0][0xbb][0xd0][0xb5][0xd0][0xb4][0xd1][0x83][0xd1][0x8e][0xd1][0x89][0xd0][0xb5][0xd0][0xb3][0xd0][0xbe] [0xd0][0xb2][0xd0][0xbe][0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd1][0x81][0xd0][0xb0]","parse_mode":"Markdown","method":"sendmessage"}"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 >> "{"chat_id":"499030130","text":"[0xd0][0x9d][0xd0][0xb5][0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbd][0xd0][0xb0][0xd1][0x8f] [0xd0][0xba][0xd0][0xbe][0xd0][0xbc][0xd0][0xb0][0xd0][0xbd][0xd0][0xb4][0xd0][0xb0]. [0xd0][0x92][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] /help [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xbf][0xd0][0xbe][0xd0][0xbc][0xd0][0xbe][0xd1][0x86][0xd0][0xb8] [0xd0][0xb8][0xd0][0xbb][0xd0][0xb8] /next [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd1][0x81][0xd0][0xbb][0xd0][0xb5][0xd0][0xb4][0xd1][0x83][0xd1][0x8e][0xd1][0x89][0xd0][0xb5][0xd0][0xb3][0xd0][0xbe] [0xd0][0xb2][0xd0][0xbe][0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd1][0x81][0xd0][0xb0]","parse_mode":"Markdown","method":"sendmessage"}"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Date: Sun, 16 Dec 2018 21:07:38 GMT[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "Date: Sat, 22 Dec 2018 18:17:34 GMT[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Content-Length: 811[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "Content-Length: 805[\r][\n]"
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
 FINE: http-outgoing-2 << "[\r][\n]"
-дек. 17, 2018 2:07:39 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "{"ok":true,"result":{"message_id":2450,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994458,"text":"\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430. \u0412\u0432\u0435\u0434\u0438\u0442\u0435 /help \u0434\u043b\u044f \u043f\u043e\u043c\u043e\u0446\u0438 \u0438\u043b\u0438 /next \u0434\u043b\u044f \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0433\u043e \u0432\u043e\u043f\u0440\u043e\u0441\u0430","entities":[{"offset":29,"length":5,"type":"bot_command"},{"offset":50,"length":5,"type":"bot_command"}]}}"
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.wire wire
+FINE: http-outgoing-2 << "{"ok":true,"result":{"message_id":2499,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":499030130,"first_name":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440","last_name":"\u0413\u0443\u043b\u044f\u0435\u0432","username":"BatyaMorty","type":"private"},"date":1545502654,"text":"\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430. \u0412\u0432\u0435\u0434\u0438\u0442\u0435 /help \u0434\u043b\u044f \u043f\u043e\u043c\u043e\u0446\u0438 \u0438\u043b\u0438 /next \u0434\u043b\u044f \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0433\u043e \u0432\u043e\u043f\u0440\u043e\u0441\u0430","entities":[{"offset":29,"length":5,"type":"bot_command"},{"offset":50,"length":5,"type":"bot_command"}]}}"
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << HTTP/1.1 200 OK
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Server: nginx/1.12.2
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Date: Sun, 16 Dec 2018 21:07:38 GMT
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-2 << Date: Sat, 22 Dec 2018 18:17:34 GMT
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Content-Type: application/json
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Content-Length: 811
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-2 << Content-Length: 805
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Connection: keep-alive
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:07:39 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:17:47 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-2 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection [id: 2][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:07:39 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:17:47 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection released: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Date: Sun, 16 Dec 2018 21:08:27 GMT[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
+FINE: http-outgoing-1 << "Date: Sat, 22 Dec 2018 18:18:23 GMT[\r][\n]"
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Content-Length: 23[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:36 PM org.apache.http.wire wire
 FINE: http-outgoing-1 << "{"ok":true,"result":[]}"
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Date: Sun, 16 Dec 2018 21:08:27 GMT
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
+FINE: http-outgoing-1 << Date: Sat, 22 Dec 2018 18:18:23 GMT
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Content-Type: application/json
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Content-Length: 23
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Connection: keep-alive
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onResponseReceived
+дек. 22, 2018 11:18:36 PM org.apache.http.headers onResponseReceived
 FINE: http-outgoing-1 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:18:36 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:18:36 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection [id: 1][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
+дек. 22, 2018 11:18:36 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
 FINE: Connection released: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:28 ДП org.apache.http.client.protocol.RequestAddCookies process
+дек. 22, 2018 11:18:37 PM org.apache.http.client.protocol.RequestAddCookies process
 FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:28 ДП org.apache.http.client.protocol.RequestAuthCache process
+дек. 22, 2018 11:18:37 PM org.apache.http.client.protocol.RequestAuthCache process
 FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
 FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
 FINE: Connection leased: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
 FINE: http-outgoing-1: set socket timeout to 75000
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:28 ДП org.apache.http.impl.execchain.MainClientExec execute
+дек. 22, 2018 11:18:37 PM org.apache.http.impl.execchain.MainClientExec execute
 FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> charset: UTF-8
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Length: 67
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Host: api.telegram.org
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:28 ДП org.apache.http.headers onRequestSubmitted
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
+FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+дек. 22, 2018 11:18:37 PM org.apache.http.headers onRequestSubmitted
 FINE: http-outgoing-1 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Length: 67[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
+FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
 FINE: http-outgoing-1 >> "[\r][\n]"
-дек. 17, 2018 2:08:28 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "{"offset":434541200,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Date: Sun, 16 Dec 2018 21:08:41 GMT[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Content-Length: 560[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "{"ok":true,"result":[{"update_id":434541200,[\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << ""message":{"message_id":2451,"from":{"id":425429259,"is_bot":false,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","language_code":"ru"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994521,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}"
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Date: Sun, 16 Dec 2018 21:08:41 GMT
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Content-Type: application/json
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Content-Length: 560
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Connection: keep-alive
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 1][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:42 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:42 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-1: set socket timeout to 75000
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:42 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:42 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> charset: UTF-8
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> Content-Length: 67
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> Host: api.telegram.org
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-1 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "Content-Length: 67[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 >> "{"offset":434541201,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "[read] I/O error: Read timed out"
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-2: set socket timeout to 75000
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> charset: UTF-8
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> Content-Length: 619
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> Host: api.telegram.org
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-2 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "Content-Length: 619[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 >> "{"chat_id":"425429259","text":"[0xd0][0x93][0xd0][0xb5][0xd1][0x80][0xd0][0xbe][0xd0][0xb9] [0xd0][0x9e][0xd0][0xbb][0xd0][0xb4][0xd0][0xbe][0xd1][0x81][0xd0][0xb0] [0xd0][0xa5][0xd0][0xb0][0xd0][0xba][0xd1][0x81][0xd0][0xbb][0xd0][0xb8] [0xd0][0xb3][0xd0][0xbe][0xd0][0xb2][0xd0][0xbe][0xd1][0x80][0xd0][0xb8][0xd1][0x82] [0xd0][0xbe] [0xd1][0x81][0xd0][0xb2][0xd0][0xbe][0xd0][0xb5][0xd0][0xb9] [0xd0][0xb2][0xd0][0xbe][0xd0][0xb7][0xd0][0xbb][0xd1][0x8e][0xd0][0xb1][0xd0][0xbb][0xd0][0xb5][0xd0][0xbd][0xd0][0xbd][0xd0][0xbe][0xd0][0xb9]: \"[0xd0][0x9e][0xd0][0xbd][0xd0][0xb0] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb1][0xd1][0x83][0xd0][0xb4][0xd0][0xb8][0xd0][0xbb][0xd0][0xb0] [0xd0][0xb2][0xd0][0xbe] [0xd0][0xbc][0xd0][0xbd][0xd0][0xb5] [0xd0][0xb8][0xd0][0xbd][0xd1][0x82][0xd0][0xb5][0xd1][0x80][0xd0][0xb5][0xd1][0x81] [0xd0][0xba] [0xd0][0xba][0xd1][0x83][0xd0][0xbb][0xd1][0x8c][0xd1][0x82][0xd1][0x83][0xd1][0x80][0xd0][0xb5]. [0xd0][0xaf] [0xd0][0xb1][0xd1][0x8b][0xd0][0xbb] [0xd0][0xbd][0xd0][0xb0][0xd0][0xbf][0xd0][0xbe][0xd0][0xbb][0xd0][0xbe][0xd0][0xb2][0xd0][0xb8][0xd0][0xbd][0xd1][0x83] [0xd0][0xb4][0xd0][0xb8][0xd0][0xba][0xd0][0xb0][0xd1][0x80][0xd0][0xb5][0xd0][0xbc], [0xd0][0xba][0xd0][0xbe][0xd0][0xb3][0xd0][0xb4][0xd0][0xb0] [0xd0][0xbf][0xd0][0xbe][0xd0][0xbf][0xd0][0xb0][0xd0][0xbb] [0xd0][0xba] [0xd0][0xbd][0xd0][0xb5][0xd0][0xb9] [0xd0][0xb2] [0xd1][0x80][0xd1][0x83][0xd0][0xba][0xd0][0xb8]\". [0xd0][0x94][0xd0][0xb0][0xd0][0xbb][0xd0][0xb5][0xd0][0xb5] [0xd0][0xb3][0xd0][0xb5][0xd1][0x80][0xd0][0xbe][0xd0][0xb9] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb8][0xd0][0xb7][0xd0][0xbd][0xd0][0xbe][0xd1][0x81][0xd0][0xb8][0xd1][0x82] [0xd1][0x82][0xd1][0x80][0xd0][0xb8] [0xd1][0x81][0xd0][0xbb][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0], [0xd0][0xba][0xd0][0xbe][0xd1][0x82][0xd0][0xbe][0xd1][0x80][0xd1][0x8b][0xd0][0xb5] [0xd1][0x8f][0xd0][0xb2][0xd0][0xbb][0xd1][0x8f][0xd1][0x8e][0xd1][0x82][0xd1][0x81][0xd1][0x8f] [0xd0][0xb0][0xd0][0xbb][0xd0][0xbb][0xd1][0x8e][0xd0][0xb7][0xd0][0xb8][0xd0][0xb5][0xd0][0xb9] [0xd0][0xbd][0xd0][0xb0] [0xd0][0xbd][0xd0][0xb0][0xd0][0xb7][0xd0][0xb2][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f], [0xd0][0xb2][0xd0][0xbf][0xd0][0xb5][0xd1][0x80][0xd0][0xb2][0xd1][0x8b][0xd0][0xb5] [0xd0][0xbe][0xd0][0xbf][0xd1][0x83][0xd0][0xb1][0xd0][0xbb][0xd0][0xb8][0xd0][0xba][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0][0xd0][0xbd][0xd0][0xbd][0xd0][0xbe][0xd0][0xb3][0xd0][0xbe] [0xd0][0xb2] 1899 [0xd0][0xb3][0xd0][0xbe][0xd0][0xb4][0xd1][0x83]. [0xd0][0x9d][0xd0][0xb0][0xd0][0xb7][0xd0][0xbe][0xd0][0xb2][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] [0xd1][0x8d][0xd1][0x82][0xd0][0xbe] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5]. \n\r","parse_mode":"Markdown","method":"sendmessage"}"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Date: Sun, 16 Dec 2018 21:08:41 GMT[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Content-Length: 1829[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "[\r][\n]"
-дек. 17, 2018 2:08:42 ДП org.apache.http.wire wire
-FINE: http-outgoing-2 << "{"ok":true,"result":{"message_id":2452,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994521,"text":"\u0413\u0435\u0440\u043e\u0439 \u041e\u043b\u0434\u043e\u0441\u0430 \u0425\u0430\u043a\u0441\u043b\u0438 \u0433\u043e\u0432\u043e\u0440\u0438\u0442 \u043e \u0441\u0432\u043e\u0435\u0439 \u0432\u043e\u0437\u043b\u044e\u0431\u043b\u0435\u043d\u043d\u043e\u0439: \"\u041e\u043d\u0430 \u043f\u0440\u043e\u0431\u0443\u0434\u0438\u043b\u0430 \u0432\u043e \u043c\u043d\u0435 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u043a \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0435. \u042f \u0431\u044b\u043b \u043d\u0430\u043f\u043e\u043b\u043e\u0432\u0438\u043d\u0443 \u0434\u0438\u043a\u0430\u0440\u0435\u043c, \u043a\u043e\u0433\u0434\u0430 \u043f\u043e\u043f\u0430\u043b \u043a \u043d\u0435\u0439 \u0432 \u0440\u0443\u043a\u0438\". \u0414\u0430\u043b\u0435\u0435 \u0433\u0435\u0440\u043e\u0439 \u043f\u0440\u043e\u0438\u0437\u043d\u043e\u0441\u0438\u0442 \u0442\u0440\u0438 \u0441\u043b\u043e\u0432\u0430, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0430\u043b\u043b\u044e\u0437\u0438\u0435\u0439 \u043d\u0430 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f, \u0432\u043f\u0435\u0440\u0432\u044b\u0435 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e \u0432 1899 \u0433\u043e\u0434\u0443. \u041d\u0430\u0437\u043e\u0432\u0438\u0442\u0435 \u044d\u0442\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435."}}"
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Date: Sun, 16 Dec 2018 21:08:41 GMT
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Content-Type: application/json
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Content-Length: 1829
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Connection: keep-alive
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:42 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-2 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 2][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:42 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 2][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Date: Sun, 16 Dec 2018 21:08:54 GMT[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Content-Length: 557[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "[\r][\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << "{"ok":true,"result":[{"update_id":434541201,[\n]"
-дек. 17, 2018 2:08:54 ДП org.apache.http.wire wire
-FINE: http-outgoing-1 << ""message":{"message_id":2453,"from":{"id":425429259,"is_bot":false,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","language_code":"ru"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994534,"text":"\u0411\u0440\u0435\u043c\u044f \u0431\u0435\u043b\u044b\u0445"}}]}"
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Date: Sun, 16 Dec 2018 21:08:54 GMT
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Content-Type: application/json
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Content-Length: 557
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Connection: keep-alive
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:54 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-1 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 1][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 1][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:54 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:54 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.CPool isExpired
-FINE: Connection [id:1][route:{s}->https://api.telegram.org:443][state:null] expired @ Mon Dec 17 02:08:47 YEKT 2018
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.CPool isExpired
-FINE: Connection [id:2][route:{s}->https://api.telegram.org:443][state:null] expired @ Mon Dec 17 02:08:48 YEKT 2018
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection close
-FINE: http-outgoing-1: Close connection
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection close
-FINE: http-outgoing-2: Close connection
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 3][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Opening connection {s}->https://api.telegram.org:443
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Opening connection {s}->https://api.telegram.org:443
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connecting to api.telegram.org/149.154.167.220:443
-дек. 17, 2018 2:08:54 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connecting to api.telegram.org/149.154.167.220:443
-дек. 17, 2018 2:08:54 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
-FINE: Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 75000
-дек. 17, 2018 2:08:54 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory connectSocket
-FINE: Connecting socket to api.telegram.org/149.154.167.220:443 with timeout 75000
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Starting handshake
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory createLayeredSocket
-FINE: Starting handshake
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE: Secure session established
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  negotiated protocol: TLSv1.2
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  peer alternative names: [api.telegram.org, www.api.telegram.org]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connection established 172.18.13.230:55632<->149.154.167.220:443
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-3: set socket timeout to 75000
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> charset: UTF-8
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE: Secure session established
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Content-Length: 67
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  negotiated protocol: TLSv1.2
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Host: api.telegram.org
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Content-Length: 67[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "{"offset":434541202,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  peer principal: CN=api.telegram.org, OU=Domain Control Validated
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  peer alternative names: [api.telegram.org, www.api.telegram.org]
-дек. 17, 2018 2:08:55 ДП org.apache.http.conn.ssl.SSLConnectionSocketFactory verifyHostname
-FINE:  issuer principal: CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, ST=Arizona, C=US
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.DefaultHttpClientConnectionOperator connect
-FINE: Connection established 172.18.13.230:55633<->149.154.167.220:443
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-4: set socket timeout to 75000
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> charset: UTF-8
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Content-Length: 221
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Host: api.telegram.org
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Content-Length: 221[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "{"chat_id":"425429259","text":"[0xd0][0x9e][0xd1][0x82][0xd0][0xb2][0xd0][0xb5][0xd1][0x82] [0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd0][0xbd][0xd1][0x8b][0xd0][0xb9]!\n[0xd0][0x94][0xd0][0xbb][0xd1][0x8f] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb4][0xd0][0xbe][0xd0][0xbb][0xd0][0xb6][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] /next, [0xd0][0xb8][0xd0][0xbb][0xd0][0xb8] [0xd0][0xb2][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb8][0xd1][0x82][0xd0][0xb5] /end [0xd0][0xb4][0xd0][0xbb][0xd1][0x8f] [0xd0][0xb7][0xd0][0xb0][0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd1][0x88][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f] [0xd0][0xb8][0xd0][0xb3][0xd1][0x80][0xd1][0x8b]","parse_mode":"Markdown","method":"sendmessage"}"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Date: Sun, 16 Dec 2018 21:08:54 GMT[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Content-Length: 825[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "[\r][\n]"
-дек. 17, 2018 2:08:55 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "{"ok":true,"result":{"message_id":2454,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994534,"text":"\u041e\u0442\u0432\u0435\u0442 \u0432\u0435\u0440\u043d\u044b\u0439!\n\u0414\u043b\u044f \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u044f \u0432\u0432\u0435\u0434\u0438\u0442\u0435 /next, \u0438\u043b\u0438 \u0432\u0432\u0435\u0434\u0438\u0442\u0435 /end \u0434\u043b\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u0438\u0433\u0440\u044b","entities":[{"offset":38,"length":5,"type":"bot_command"},{"offset":57,"length":4,"type":"bot_command"}]}}"
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Date: Sun, 16 Dec 2018 21:08:54 GMT
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Content-Type: application/json
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Content-Length: 825
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Connection: keep-alive
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:55 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 4][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:55 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Date: Sun, 16 Dec 2018 21:08:59 GMT[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Content-Length: 559[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << "{"ok":true,"result":[{"update_id":434541202,[\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 << ""message":{"message_id":2455,"from":{"id":425429259,"is_bot":false,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","language_code":"ru"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994539,"text":"/next","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}]}"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Date: Sun, 16 Dec 2018 21:08:59 GMT
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Content-Type: application/json
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Content-Length: 559
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Connection: keep-alive
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-3 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 3][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 3][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:59 ДП org.apache.http.client.protocol.RequestAddCookies process
-FINE: CookieSpec selected: default
-дек. 17, 2018 2:08:59 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:59 ДП org.apache.http.client.protocol.RequestAuthCache process
-FINE: Auth cache not set in the context
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager requestConnection
-FINE: Connection request: [route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 3][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-3: set socket timeout to 75000
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> charset: UTF-8
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Content-Length: 67
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "[read] I/O error: Read timed out"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager leaseConnection
-FINE: Connection leased: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 100]
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Host: api.telegram.org
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.DefaultManagedHttpClientConnection setSocketTimeout
-FINE: http-outgoing-4: set socket timeout to 75000
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Executing request POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Target auth state: UNCHALLENGED
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-3 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Proxy auth state: UNCHALLENGED
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/getupdates HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Content-Length: 67[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> charset: UTF-8
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Content-Length: 655
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Content-Type: application/json; charset=UTF-8
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Host: api.telegram.org
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Connection: Keep-Alive
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onRequestSubmitted
-FINE: http-outgoing-4 >> Accept-Encoding: gzip,deflate
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-3 >> "{"offset":434541203,"limit":100,"timeout":50,"method":"getupdates"}"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "POST /bot697301961:AAEdrNBIeEN_hIMi07qmqd4La-rfPwmC4go/sendmessage HTTP/1.1[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "charset: UTF-8[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Content-Length: 655[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Host: api.telegram.org[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/10.0.1)[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 >> "{"chat_id":"425429259","text":"[0xd0][0x92] 1848 [0xd0][0xb3][0xd0][0xbe][0xd0][0xb4][0xd1][0x83] [0xd1][0x80][0xd1][0x83][0xd1][0x81][0xd1][0x81][0xd0][0xba][0xd0][0xb0][0xd1][0x8f] [0xd0][0xb3][0xd0][0xb2][0xd0][0xb0][0xd1][0x80][0xd0][0xb4][0xd0][0xb8][0xd1][0x8f] [0xd0][0xb4][0xd0][0xbe][0xd0][0xbb][0xd0][0xb6][0xd0][0xbd][0xd0][0xb0] [0xd0][0xb1][0xd1][0x8b][0xd0][0xbb][0xd0][0xb0] [0xd1][0x83][0xd1][0x87][0xd0][0xb0][0xd1][0x81][0xd1][0x82][0xd0][0xb2][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0][0xd1][0x82][0xd1][0x8c] [0xd0][0xb2] [0xd0][0xbf][0xd0][0xbe][0xd0][0xb4][0xd0][0xb0][0xd0][0xb2][0xd0][0xbb][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd0][0xb8] [0xd0][0x92][0xd0][0xb5][0xd0][0xbd][0xd0][0xb3][0xd0][0xb5][0xd1][0x80][0xd1][0x81][0xd0][0xba][0xd0][0xbe][0xd0][0xb3][0xd0][0xbe] [0xd0][0xb2][0xd0][0xbe][0xd1][0x81][0xd1][0x81][0xd1][0x82][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f], [0xd0][0xbe][0xd0][0xb4][0xd0][0xbd][0xd0][0xb0][0xd0][0xba][0xd0][0xbe] [0xd0][0xb2] [0xd0][0xb8][0xd1][0x82][0xd0][0xbe][0xd0][0xb3][0xd0][0xb5] [0xd0][0xb2][0xd0][0xb5][0xd1][0x80][0xd0][0xbd][0xd1][0x83][0xd0][0xbb][0xd0][0xb0][0xd1][0x81][0xd1][0x8c] [0xd0][0xb2] [0xd0][0xba][0xd0][0xb0][0xd0][0xb7][0xd0][0xb0][0xd1][0x80][0xd0][0xbc][0xd1][0x8b], [0xd0][0xbd][0xd0][0xb5] [0xd0][0xb2][0xd1][0x81][0xd1][0x82][0xd1][0x83][0xd0][0xbf][0xd0][0xb0][0xd1][0x8f] [0xd0][0xb2] [0xd0][0xb1][0xd0][0xbe][0xd0][0xb5][0xd0][0xb2][0xd1][0x8b][0xd0][0xb5] [0xd0][0xb4][0xd0][0xb5][0xd0][0xb9][0xd1][0x81][0xd1][0x82][0xd0][0xb2][0xd0][0xb8][0xd1][0x8f]. [0xd0][0x9f][0xd0][0xb5][0xd1][0x82][0xd0][0xb5][0xd1][0x80][0xd0][0xb1][0xd1][0x83][0xd1][0x80][0xd0][0xb3][0xd1][0x81][0xd0][0xba][0xd0][0xb8][0xd0][0xb5] [0xd0][0xbe][0xd1][0x81][0xd1][0x82][0xd1][0x80][0xd1][0x8f][0xd0][0xba][0xd0][0xb8] [0xd0][0xbf][0xd1][0x80][0xd0][0xb5][0xd0][0xb4][0xd0][0xbf][0xd0][0xbe][0xd0][0xbb][0xd0][0xbe][0xd0][0xb6][0xd0][0xb8][0xd0][0xbb][0xd0][0xb8], [0xd1][0x87][0xd1][0x82][0xd0][0xbe] [0xd0][0xbd][0xd0][0xb0] [0xd0][0xbc][0xd0][0xb5][0xd0][0xb4][0xd0][0xb0][0xd0][0xbb][0xd0][0xb8] [0xd0][0xb2] [0xd1][0x87][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd1][0x8c] [0xd1][0x8d][0xd1][0x82][0xd0][0xbe][0xd0][0xb3][0xd0][0xbe] [0xd0][0xbf][0xd0][0xbe][0xd1][0x85][0xd0][0xbe][0xd0][0xb4][0xd0][0xb0] [0xd0][0xb1][0xd1][0x83][0xd0][0xb4][0xd1][0x83][0xd1][0x82] [0xd0][0xb2][0xd1][0x8b][0xd0][0xb1][0xd0][0xb8][0xd1][0x82][0xd1][0x8b] [0xd1][0x82][0xd1][0x80][0xd0][0xb8] [0xd1][0x81][0xd0][0xbb][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0]. [0xd0][0xad][0xd1][0x82][0xd0][0xb8] [0xd1][0x82][0xd1][0x80][0xd0][0xb8] [0xd1][0x81][0xd0][0xbb][0xd0][0xbe][0xd0][0xb2][0xd0][0xb0] [0xd0][0xb2][0xd1][0x85][0xd0][0xbe][0xd0][0xb4][0xd1][0x8f][0xd1][0x82] [0xd0][0xb2] [0xd0][0xbd][0xd0][0xb0][0xd0][0xb7][0xd0][0xb2][0xd0][0xb0][0xd0][0xbd][0xd0][0xb8][0xd0][0xb5] [0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd1][0x81][0xd1][0x82][0xd0][0xbd][0xd0][0xbe][0xd0][0xb3][0xd0][0xbe] [0xd0][0xbf][0xd1][0x80][0xd0][0xbe][0xd0][0xb8][0xd0][0xb7][0xd0][0xb2][0xd0][0xb5][0xd0][0xb4][0xd0][0xb5][0xd0][0xbd][0xd0][0xb8][0xd1][0x8f]. [0xd0][0x9a][0xd0][0xb0][0xd0][0xba][0xd0][0xbe][0xd0][0xb3][0xd0][0xbe]? \n\r","parse_mode":"Markdown","method":"sendmessage"}"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Server: nginx/1.12.2[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Date: Sun, 16 Dec 2018 21:08:59 GMT[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Content-Type: application/json[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Content-Length: 1941[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Connection: keep-alive[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Allow-Origin: *[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Allow-Methods: GET, POST, OPTIONS[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "[\r][\n]"
-дек. 17, 2018 2:08:59 ДП org.apache.http.wire wire
-FINE: http-outgoing-4 << "{"ok":true,"result":{"message_id":2456,"from":{"id":697301961,"is_bot":true,"first_name":"WhoWhereWhen","username":"MyCHGKBot"},"chat":{"id":425429259,"first_name":"\u0412\u0438\u0442\u0430\u043b\u0438\u0439","last_name":"\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432","username":"Vitaliy_Dm","type":"private"},"date":1544994539,"text":"\u0412 1848 \u0433\u043e\u0434\u0443 \u0440\u0443\u0441\u0441\u043a\u0430\u044f \u0433\u0432\u0430\u0440\u0434\u0438\u044f \u0434\u043e\u043b\u0436\u043d\u0430 \u0431\u044b\u043b\u0430 \u0443\u0447\u0430\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c \u0432 \u043f\u043e\u0434\u0430\u0432\u043b\u0435\u043d\u0438\u0438 \u0412\u0435\u043d\u0433\u0435\u0440\u0441\u043a\u043e\u0433\u043e \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u0438\u044f, \u043e\u0434\u043d\u0430\u043a\u043e \u0432 \u0438\u0442\u043e\u0433\u0435 \u0432\u0435\u0440\u043d\u0443\u043b\u0430\u0441\u044c \u0432 \u043a\u0430\u0437\u0430\u0440\u043c\u044b, \u043d\u0435 \u0432\u0441\u0442\u0443\u043f\u0430\u044f \u0432 \u0431\u043e\u0435\u0432\u044b\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f. \u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433\u0441\u043a\u0438\u0435 \u043e\u0441\u0442\u0440\u044f\u043a\u0438 \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u043e\u0436\u0438\u043b\u0438, \u0447\u0442\u043e \u043d\u0430 \u043c\u0435\u0434\u0430\u043b\u0438 \u0432 \u0447\u0435\u0441\u0442\u044c \u044d\u0442\u043e\u0433\u043e \u043f\u043e\u0445\u043e\u0434\u0430 \u0431\u0443\u0434\u0443\u0442 \u0432\u044b\u0431\u0438\u0442\u044b \u0442\u0440\u0438 \u0441\u043b\u043e\u0432\u0430. \u042d\u0442\u0438 \u0442\u0440\u0438 \u0441\u043b\u043e\u0432\u0430 \u0432\u0445\u043e\u0434\u044f\u0442 \u0432 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f. \u041a\u0430\u043a\u043e\u0433\u043e?"}}"
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << HTTP/1.1 200 OK
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Server: nginx/1.12.2
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Date: Sun, 16 Dec 2018 21:08:59 GMT
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Content-Type: application/json
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Content-Length: 1941
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Connection: keep-alive
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Allow-Origin: *
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Allow-Methods: GET, POST, OPTIONS
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
-дек. 17, 2018 2:08:59 ДП org.apache.http.headers onResponseReceived
-FINE: http-outgoing-4 << Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.execchain.MainClientExec execute
-FINE: Connection can be kept alive indefinitely
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection [id: 4][route: {s}->https://api.telegram.org:443] can be kept alive indefinitely
-дек. 17, 2018 2:08:59 ДП org.apache.http.impl.conn.PoolingHttpClientConnectionManager releaseConnection
-FINE: Connection released: [id: 4][route: {s}->https://api.telegram.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 100]
+дек. 22, 2018 11:18:37 PM org.apache.http.wire wire
+FINE: http-outgoing-1 >> "{"offset":434541237,"limit":100,"timeout":50,"method":"getupdates"}"
