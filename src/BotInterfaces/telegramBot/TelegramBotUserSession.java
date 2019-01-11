@@ -27,10 +27,10 @@ public class TelegramBotUserSession extends UserSession {
     public void saveSession() {
         var serializedString = questionHelper.getQuestionsId().toString();
         serializedString = serializedString.substring(1, serializedString.length() - 1);
-        if (Bot.dataBaseGetter.getUserSession(currentChatId) == null)
-            Bot.dataBaseSetter.setDataToDataBase(currentChatId, serializedString, questionHelper.getScore());
+        if (Bot.sessionDAO.getSessionInfo(currentChatId) == null)
+            Bot.sessionDAO.addSessionInfo(currentChatId, serializedString, questionHelper.getScore());
         else
-            Bot.dataBaseSetter.updateDataInDataBase(currentChatId, serializedString, questionHelper.getScore());
+            Bot.sessionDAO.updateSessionInfo(currentChatId, serializedString, questionHelper.getScore());
     }
 
     @Override

@@ -12,9 +12,9 @@ public class TelegramSessionGetter extends SqlGetter {
     protected void requestAction() throws SQLException {
         gettedSession = null;
         if (resultSet.next()){
-            gettedSession = new SessionInfo();
-            gettedSession.Score = resultSet.getInt("score");
-            gettedSession.UserQuestions = resultSet.getString("userQuestions");
+//            gettedSession = new SessionInfo();
+//            gettedSession.Score = resultSet.getInt("score");
+//            gettedSession.UserQuestions = resultSet.getString("userQuestions");
         }
     }
 

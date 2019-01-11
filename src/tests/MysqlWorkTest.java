@@ -34,8 +34,8 @@ public class MysqlWorkTest {
     @Test
     public void setDataToDataBaseTest(){
         var session = dataBaseGetter.getUserSession(userId);
-        assertEquals(questionId, session.UserQuestions);
-        assertEquals(score, session.Score);
+        assertEquals(questionId, session.getUserQuestions());
+        assertEquals(java.util.Optional.ofNullable(score), session.getScore());
     }
 
     @Test
@@ -43,8 +43,8 @@ public class MysqlWorkTest {
         int newScore = 20;
         dataBaseSetter.updateDataInDataBase(userId, questionId, newScore);
         var session = dataBaseGetter.getUserSession(userId);
-        assertEquals(questionId, session.UserQuestions);
-        assertEquals(newScore, session.Score);
+        assertEquals(questionId, session.getUserQuestions());
+        assertEquals(java.util.Optional.ofNullable(newScore), session.getScore());
     }
 
     @Test
@@ -52,7 +52,7 @@ public class MysqlWorkTest {
         dataBaseSetter.deleteDataInDataBase(userId);
         var session = dataBaseGetter.getUserSession(userId);
         try {
-            var a = session.Score;
+            var a = session.getScore();
         }catch (NullPointerException ignored){ }
     }
 

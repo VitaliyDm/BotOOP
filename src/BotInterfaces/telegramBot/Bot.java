@@ -3,6 +3,7 @@ package BotInterfaces.telegramBot;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import mysqlWork.Getters.TelegramSessionGetter;
+import mysqlWork.SessionInfoDAOImpl;
 import mysqlWork.Setters.TelegramSessionSetter;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
@@ -26,8 +27,9 @@ public final class Bot extends TelegramLongPollingBot {
     private static Bot bot;
     static Logger log = Logger.getLogger(Bot.class.getName());
     static Map<Long, UserThread> users = new HashMap<>();
-    static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
-    public static TelegramSessionGetter dataBaseGetter = new TelegramSessionGetter();
+//    static TelegramSessionSetter dataBaseSetter = new TelegramSessionSetter();
+//    public static TelegramSessionGetter dataBaseGetter = new TelegramSessionGetter();
+static SessionInfoDAOImpl sessionDAO = new SessionInfoDAOImpl();
 
     private static String botToken;
 
@@ -81,9 +83,10 @@ public final class Bot extends TelegramLongPollingBot {
     private UserThread createUserSession(long chatId){
         try {
             var currentUserSession = new UserThread(bot, chatId);
-            var session = dataBaseGetter.getUserSession(chatId);
+//            var session = dataBaseGetter.getUserSession(chatId);
+            var session = sessionDAO.getSessionInfo(chatId);
             if (session != null){
-                currentUserSession.UserSession.setSession(session.UserQuestions, session.Score);
+                currentUserSession.UserSession.setSession(session.getUserQuestions(), session.getScore());
             }
             currentUserSession.start();
             return currentUserSession;

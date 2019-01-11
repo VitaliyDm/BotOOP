@@ -22,7 +22,7 @@ public class ControlThread implements Runnable{
             for (var sessionId : Bot.users.keySet()){
                 var userSession = Bot.users.get(sessionId).UserSession;
                 if (userSession.getUserDialog().getIsEnd()){
-                    Bot.dataBaseSetter.deleteDataInDataBase(userSession.getCurrentChatId());
+                    Bot.sessionDAO.deleteSessionInfo(userSession.getCurrentChatId());
                     Bot.users.remove(sessionId);
                     continue;
                 }

@@ -24,4 +24,10 @@ public final class SessionInfo {
 
     public void setUserQuestions(String userQuestions){this.userQuestions = userQuestions;}
     public String getUserQuestions(){return userQuestions;}
+
+    public SessionInfo(Long chatId, Integer score, String userQuestions){
+        this.chatId = chatId;
+        this.score = score;
+        this.userQuestions = userQuestions;
+    }
 }
