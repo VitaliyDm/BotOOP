@@ -12,7 +12,7 @@ public class MysqlWorkTest {
     private String questionId;
     private int score;
     private SessionInfoService dbServise = new SessionInfoService();
-    private SessionEntity sessionEntity = new SessionEntity();
+    private SessionEntity sessionEntity = new SessionEntity(0, 0, "");
 
     @Before
     public void getDefaultValues(){
