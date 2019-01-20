@@ -22,21 +22,21 @@ class UserThread extends Thread {
 
     private LocalDateTime LastActivityTime;
     LocalDateTime getLastActivityTime(){return LastActivityTime;}
-    public void setLastActivityTime(LocalDateTime lastActivityTime){
-        this.LastActivityTime = lastActivityTime;
+    public void updateLastActivityTimeToNow(){
+        this.LastActivityTime = LocalDateTime.now();
     }
 
     private static final String loggingProperties = "/logging.properties";
     private static Logger log = Logger.getLogger(Bot.class.getName());
 
     void setMessagesQueue(String message){
-        LastActivityTime = LocalDateTime.now();
+        updateLastActivityTimeToNow();
         UserSession.setMessagesQueue(message);
     }
 
     UserThread(Bot bot, Long chatId) throws IOException {
         LogManager.getLogManager().readConfiguration(UserThread.class.getResourceAsStream(loggingProperties));
-        LastActivityTime = LocalDateTime.now();
+        updateLastActivityTimeToNow();
         UserSession = new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId);
         SessionEntity session = bot.dbServise.get(chatId);
         if (session != null){
