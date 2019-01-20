@@ -49,8 +49,10 @@ public class ControlThread implements Runnable{
                     continue;
                 }
 
-                LocalDateTime currentTime = LocalDateTime.now();
-                if (users.get(sessionId).getLastActivityTime().plusSeconds(Constants.TIMEOUT).isAfter(currentTime)){
+                Instant currentTime = Instant.now();
+                if (users.get(sessionId).getLastActivityTime()
+                        .plusSeconds(Constants.TIMEOUT)
+                        .isAfter(currentTime.atZone(ZoneId.systemDefault ()).toLocalDateTime())){
                         userSession.saveSession();
                     users.remove(sessionId);
                 }
