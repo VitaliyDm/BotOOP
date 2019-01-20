@@ -23,35 +23,33 @@ import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public final class Bot extends TelegramLongPollingBot {
-    private static final String loggingProperties = "./logging.properties";
-
-    private static Bot bot;
+    private static final String loggingProperties = "/logging.properties";
     static Logger log = Logger.getLogger(Bot.class.getName());
-    static Map<Long, UserThread> users = new HashMap<>();
-    public static SessionInfoService dbServise = new SessionInfoService();
-
-    private static String botToken;
+    private static Bot bot;
+    Map<Long, UserThread> users = new HashMap<>();
+    public SessionInfoService dbServise = new SessionInfoService();
+    private String botToken;
 
     private static class ConfigStructure{
-        public String apiToken;
+        String apiToken;
     }
 
     public static void main(String[] args) throws IOException {
         LogManager.getLogManager().readConfiguration(Bot.class.getResourceAsStream(loggingProperties));
-        try {
-            setConfig();
-        } catch (IOException e) {
-            log.log(Level.SEVERE, e.getMessage(), e);
-        }
         ApiContextInitializer.init();
         TelegramBotsApi api = new TelegramBotsApi();
         bot = new Bot();
+        try {
+            bot.setConfig();
+        } catch (IOException e) {
+            log.log(Level.SEVERE, e.getMessage(), e);
+        }
         try {
             api.registerBot(bot);
         } catch (TelegramApiException e){
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        ControlThread controlThread = new ControlThread();
+        ControlThread controlThread = new ControlThread(bot.users, bot.dbServise);
         controlThread.run();
     }
 
@@ -82,10 +80,6 @@ public final class Bot extends TelegramLongPollingBot {
     private UserThread createUserSession(long chatId){
         try {
             UserThread currentUserSession = new UserThread(bot, chatId);
-            SessionEntity session = dbServise.get(chatId);
-            if (session != null){
-                currentUserSession.UserSession.setSession(session.getUserQuestions(), session.getScore());
-            }
             currentUserSession.start();
             return currentUserSession;
         } catch (IOException e) {
@@ -95,7 +89,7 @@ public final class Bot extends TelegramLongPollingBot {
         return null;
     }
 
-    private static void setConfig() throws IOException{
+    private void setConfig() throws IOException{
         File configFile = new File(Constants.PATH_TO_BOT_CONFIG);
         Gson gson = new Gson();
         ConfigStructure config = new ConfigStructure();
