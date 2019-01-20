@@ -6,15 +6,20 @@ import mysqlWork.SessionEntity;
 import questions.QuestionsGenerator;
 
 import java.io.IOException;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class TelegramBotUserSession extends UserSession {
     private Long currentChatId;
     private TelegramIOManager ioManager;
+    private Bot bot;
 
-    public Long getCurrentChatId() { return currentChatId; }
+    Long getCurrentChatId() { return currentChatId; }
 
-    public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId) throws IOException {
+    public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId){
         super(questionsGenerator);
+
+        this.bot = bot;
         ioManager = new TelegramIOManager(bot, chatId);
         userDialog = new Dialog(questionHelper, ioManager);
         currentChatId = chatId;
