@@ -16,13 +16,13 @@ class UserThread extends Thread {
 
     private TelegramBotUserSession UserSession;
     TelegramBotUserSession getUserSession(){return  UserSession;}
-    public void setUserSession(TelegramBotUserSession userSession){
+    private void setUserSession(TelegramBotUserSession userSession){
         this.UserSession = userSession;
     }
 
     private LocalDateTime LastActivityTime;
     LocalDateTime getLastActivityTime(){return LastActivityTime;}
-    public void updateLastActivityTimeToNow(){
+    private void updateLastActivityTimeToNow(){
         this.LastActivityTime = LocalDateTime.now();
     }
 
@@ -37,7 +37,7 @@ class UserThread extends Thread {
     UserThread(Bot bot, Long chatId) throws IOException {
         LogManager.getLogManager().readConfiguration(UserThread.class.getResourceAsStream(loggingProperties));
         updateLastActivityTimeToNow();
-        UserSession = new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId);
+        setUserSession(new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId));
         SessionEntity session = bot.dbServise.get(chatId);
         if (session != null){
             UserSession.setSession(session.getUserQuestions(), session.getScore());
