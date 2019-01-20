@@ -3,3 +3,4 @@ out/
 config.json
 *.iml
 target/
+logging.properties

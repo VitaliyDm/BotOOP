@@ -10,6 +10,12 @@ public class SessionEntity {
     private Integer score;
     private String userQuestions;
 
+    public SessionEntity(long chatId, Integer score, String userQuestions) {
+        this.chatId = chatId;
+        this.score = score;
+        this.userQuestions = userQuestions;
+    }
+
     @Id
     @Column(name = "chatId", nullable = false)
     public long getChatId() {
@@ -45,14 +51,12 @@ public class SessionEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         SessionEntity that = (SessionEntity) o;
-        return chatId == that.chatId &&
-                Objects.equals(score, that.score) &&
-                Objects.equals(userQuestions, that.userQuestions);
+        return chatId == that.chatId;
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(chatId, score, userQuestions);
+        return Objects.hash(chatId);
     }
 }

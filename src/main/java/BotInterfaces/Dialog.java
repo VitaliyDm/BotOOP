@@ -5,8 +5,8 @@ import questions.QuestionHelper;
 import java.io.IOException;
 
 public class Dialog{
-    protected QuestionHelper questionHelper;
-    protected Boolean isEnd = false;
+    private QuestionHelper questionHelper;
+    private Boolean isEnd = false;
     private IOInterface ioManager;
 
     public Boolean getIsEnd(){
