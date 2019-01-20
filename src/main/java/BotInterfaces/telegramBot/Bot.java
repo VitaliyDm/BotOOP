@@ -73,8 +73,7 @@ public final class Bot extends TelegramLongPollingBot {
         Long chatId = message.getChatId();
         System.out.println('s' + chatId);
         synchronized (users) {
-            users.computeIfAbsent(chatId, id -> createUserSession(id));
-            UserThread userSession = users.get(chatId);
+            UserThread userSession = users.computeIfAbsent(chatId, id -> createUserSession(id));
             userSession.setMessagesQueue(message.getText());
         }
     }

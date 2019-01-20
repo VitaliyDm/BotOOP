@@ -10,6 +10,12 @@ public class SessionEntity {
     private Integer score;
     private String userQuestions;
 
+    public SessionEntity(long chatId, Integer score, String userQuestions) {
+        this.chatId = chatId;
+        this.score = score;
+        this.userQuestions = userQuestions;
+    }
+
     @Id
     @Column(name = "chatId", nullable = false)
     public long getChatId() {

@@ -3,13 +3,16 @@ package BotInterfaces.telegramBot;
 import BotInterfaces.Dialog;
 import BotInterfaces.UserSession;
 import mysqlWork.SessionEntity;
+import mysqlWork.SessionInfoService;
 import questions.QuestionsGenerator;
 
+import javax.persistence.EntityManager;
 import java.io.IOException;
 
 public class TelegramBotUserSession extends UserSession {
     private Long currentChatId;
     private TelegramIOManager ioManager;
+    private SessionInfoService entityManager;
 
     public Long getCurrentChatId() { return currentChatId; }
 
@@ -18,6 +21,7 @@ public class TelegramBotUserSession extends UserSession {
         ioManager = new TelegramIOManager(bot, chatId);
         userDialog = new Dialog(questionHelper, ioManager);
         currentChatId = chatId;
+        entityManager = new SessionInfoService();
     }
 
     Dialog getUserDialog(){
@@ -28,14 +32,15 @@ public class TelegramBotUserSession extends UserSession {
     public void saveSession() {
         String serializedString = questionHelper.getQuestionsId().toString();
         serializedString = serializedString.substring(1, serializedString.length() - 1);
-        SessionEntity session = new SessionEntity();
-        session.setChatId(currentChatId);
-        session.setScore(questionHelper.getScore());
-        session.setUserQuestions(serializedString);
-        if (Bot.dbServise.get(currentChatId) == null)
-            Bot.dbServise.add(session);
-        else
-            Bot.dbServise.update(session);
+        SessionEntity dbSession = entityManager.get(currentChatId);
+        if (dbSession == null)
+            entityManager.add(new SessionEntity(currentChatId, questionHelper.getScore(), serializedString));
+        else {
+            dbSession.setScore(questionHelper.getScore());
+            dbSession.setUserQuestions(serializedString);
+        }
+
+        entityManager.entityManager.flush();
     }
 
     @Override
