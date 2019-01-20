@@ -45,14 +45,12 @@ public class SessionEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         SessionEntity that = (SessionEntity) o;
-        return chatId == that.chatId &&
-                Objects.equals(score, that.score) &&
-                Objects.equals(userQuestions, that.userQuestions);
+        return chatId == that.chatId;
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(chatId, score, userQuestions);
+        return Objects.hash(chatId);
     }
 }
