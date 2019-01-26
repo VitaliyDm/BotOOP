@@ -16,18 +16,19 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public final class Bot extends TelegramLongPollingBot {
+public final class Bot extends TelegramLongPollingBot implements Runnable {
     private static final String loggingProperties = "/logging.properties";
     static Logger log = Logger.getLogger(Bot.class.getName());
     private static Bot bot;
     Map<Long, UserThread> users = new HashMap<>();
-    public SessionInfoService dbServise = new SessionInfoService();
+    public SessionInfoService dbServise;
     private String botToken;
 
     private static class ConfigStructure{
@@ -44,13 +45,13 @@ public final class Bot extends TelegramLongPollingBot {
         } catch (IOException e) {
             log.log(Level.SEVERE, e.getMessage(), e);
         }
+        bot.dbServise = new SessionInfoService();
         try {
             api.registerBot(bot);
         } catch (TelegramApiException e){
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        ControlThread controlThread = new ControlThread(bot.users, bot.dbServise);
-        controlThread.run();
+        bot.run();
     }
 
     void sendMessage(String text, Long chatId){
@@ -105,6 +106,39 @@ public final class Bot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         return botToken;
+    }
+
+    @Override
+    public void run(){
+        while (true){
+            checkAndRemoveInactiveThreads();
+            try {
+                Thread.sleep(Constants.TIMEOUT);
+            } catch (InterruptedException e) {
+                log.log(Level.SEVERE, e.getMessage(), e);
+            }
+        }
+    }
+
+    private void checkAndRemoveInactiveThreads(){
+        synchronized (users) {
+            for (Long sessionId : users.keySet()){
+                TelegramBotUserSession userSession = users.get(sessionId).getUserSession();
+                if (userSession.getUserDialog().getIsEnd()){
+                    dbServise.delete(userSession.getCurrentChatId());
+                    users.remove(sessionId);
+                    continue;
+                }
+
+                LocalDateTime currentTime = LocalDateTime.now();
+                if (users.get(sessionId).getLastActivityTime()
+                        .plusSeconds(Constants.TIMEOUT)
+                        .isAfter(currentTime)){
+                    userSession.saveSession();
+                    users.remove(sessionId);
+                }
+            }
+        }
     }
 
 }

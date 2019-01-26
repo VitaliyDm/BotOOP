@@ -33,13 +33,14 @@ public class TelegramBotUserSession extends UserSession {
     public void saveSession() {
         String serializedString = questionHelper.getQuestionsId().toString();
         serializedString = serializedString.substring(1, serializedString.length() - 1);
-        SessionEntity dbSession = Bot.dbServise.get(currentChatId);
+        SessionEntity dbSession = bot.dbServise.get(currentChatId);
         if (dbSession == null)
-            Bot.dbServise.add(new SessionEntity(currentChatId, questionHelper.getScore(), serializedString));
+
+            bot.dbServise.add(new SessionEntity().sessionEntity(currentChatId, questionHelper.getScore(), serializedString));
         else {
             dbSession.setScore(questionHelper.getScore());
             dbSession.setUserQuestions(serializedString);
-            Bot.dbServise.update(dbSession);
+            bot.dbServise.update(dbSession);
         }
     }
 
