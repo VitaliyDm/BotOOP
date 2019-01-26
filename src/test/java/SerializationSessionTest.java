@@ -17,7 +17,7 @@ public class SerializationSessionTest {
     private Bot bot;
 
     @Before
-    public void getDefaultValues(){
+    public void getDefaultValues() throws IOException {
         userId = 1234567L;
         questionId = "1.1, 1.2";
         score = 10;
@@ -30,7 +30,7 @@ public class SerializationSessionTest {
         session.setSession(questionId, score);
         session.saveSession();
 
-        SessionEntity serialaizedSession = Bot.dbServise.get(userId);
+        SessionEntity serialaizedSession = bot.dbServise.get(userId);
         assertEquals((int)serialaizedSession.getScore(), score);
         assertEquals(serialaizedSession.getUserQuestions(), questionId);
     }
