@@ -26,7 +26,6 @@ import java.util.logging.Logger;
 public final class Bot extends TelegramLongPollingBot implements Runnable {
     private static final String loggingProperties = "/logging.properties";
     static Logger log = Logger.getLogger(Bot.class.getName());
-    private static Bot bot;
     Map<Long, UserThread> users = new HashMap<>();
     public SessionInfoService dbServise;
     private String botToken;
@@ -35,23 +34,25 @@ public final class Bot extends TelegramLongPollingBot implements Runnable {
         String apiToken;
     }
 
-    public static void main(String[] args) throws IOException {
-        LogManager.getLogManager().readConfiguration(Bot.class.getResourceAsStream(loggingProperties));
+    static {
         ApiContextInitializer.init();
+    }
+
+    public Bot() throws IOException {
+        LogManager.getLogManager().readConfiguration(Bot.class.getResourceAsStream(loggingProperties));
         TelegramBotsApi api = new TelegramBotsApi();
-        bot = new Bot();
         try {
-            bot.setConfig();
+            this.setConfig();
         } catch (IOException e) {
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        bot.dbServise = new SessionInfoService();
+        this.dbServise = new SessionInfoService();
         try {
-            api.registerBot(bot);
+            api.registerBot(this);
         } catch (TelegramApiException e){
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        bot.run();
+        this.run();
     }
 
     void sendMessage(String text, Long chatId){
@@ -79,7 +80,7 @@ public final class Bot extends TelegramLongPollingBot implements Runnable {
 
     private UserThread createUserSession(long chatId){
         try {
-            UserThread currentUserSession = new UserThread(bot, chatId);
+            UserThread currentUserSession = new UserThread(this, chatId);
             currentUserSession.start();
             return currentUserSession;
         } catch (IOException e) {

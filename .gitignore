@@ -4,3 +4,4 @@ config.json
 *.iml
 target/
 logging.properties
+log.txt
