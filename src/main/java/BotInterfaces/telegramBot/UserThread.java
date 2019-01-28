@@ -20,6 +20,13 @@ class UserThread extends Thread {
         this.UserSession = userSession;
     }
 
+    private void unloadUserSession(Bot bot, Long chatId){
+        SessionEntity session = bot.dbServise.get(chatId);
+        if (session != null){
+            UserSession.setSession(session.getUserQuestions(), session.getScore());
+        }
+    }
+
     private LocalDateTime LastActivityTime;
     LocalDateTime getLastActivityTime(){return LastActivityTime;}
     private void updateLastActivityTimeToNow(){
@@ -38,10 +45,7 @@ class UserThread extends Thread {
         LogManager.getLogManager().readConfiguration(UserThread.class.getResourceAsStream(loggingProperties));
         updateLastActivityTimeToNow();
         setUserSession(new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId));
-        SessionEntity session = bot.dbServise.get(chatId);
-        if (session != null){
-            UserSession.setSession(session.getUserQuestions(), session.getScore());
-        }
+        unloadUserSession(bot, chatId);
     }
 
     public void run() {
