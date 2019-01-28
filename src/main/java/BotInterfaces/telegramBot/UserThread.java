@@ -2,6 +2,8 @@ package BotInterfaces.telegramBot;
 
 import constants.Constants;
 import mysqlWork.SessionEntity;
+import mysqlWork.SessionInfoFactory;
+import mysqlWork.SessionInfoService;
 import questions.QuestionsGenerator;
 
 import java.io.IOException;
@@ -14,6 +16,7 @@ import java.util.logging.Logger;
 
 class UserThread extends Thread {
 
+    public SessionInfoService sessionInfoService;
     private TelegramBotUserSession UserSession;
     TelegramBotUserSession getUserSession(){return  UserSession;}
     private void setUserSession(TelegramBotUserSession userSession){
@@ -21,7 +24,7 @@ class UserThread extends Thread {
     }
 
     private void unloadUserSession(Bot bot, Long chatId){
-        SessionEntity session = bot.dbServise.get(chatId);
+        SessionEntity session = sessionInfoService.get(chatId);
         if (session != null){
             UserSession.setSession(session.getUserQuestions(), session.getScore());
         }
@@ -41,10 +44,12 @@ class UserThread extends Thread {
         UserSession.setMessagesQueue(message);
     }
 
-    UserThread(Bot bot, Long chatId) throws IOException {
+    UserThread(Bot bot, Long chatId, SessionInfoService sessionInfoService) throws IOException {
+        this.sessionInfoService = sessionInfoService;
         LogManager.getLogManager().readConfiguration(UserThread.class.getResourceAsStream(loggingProperties));
         updateLastActivityTimeToNow();
-        setUserSession(new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId));
+        setUserSession(new TelegramBotUserSession(
+                new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, chatId, sessionInfoService));
         unloadUserSession(bot, chatId);
     }
 

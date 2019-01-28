@@ -3,6 +3,7 @@ package BotInterfaces.telegramBot;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 import mysqlWork.SessionEntity;
+import mysqlWork.SessionInfoFactory;
 import mysqlWork.SessionInfoService;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -27,7 +28,7 @@ public final class Bot extends TelegramLongPollingBot{
     private static final String loggingProperties = "/logging.properties";
     static Logger log = Logger.getLogger(Bot.class.getName());
     Map<Long, UserThread> users = new HashMap<>();
-    public SessionInfoService dbServise;
+    public SessionInfoFactory sessionInfoFactory;
     private String botToken;
 
     private static class ConfigStructure{
@@ -46,7 +47,7 @@ public final class Bot extends TelegramLongPollingBot{
         } catch (IOException e) {
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        this.dbServise = new SessionInfoService();
+        this.sessionInfoFactory = new SessionInfoFactory();
         try {
             api.registerBot(this);
         } catch (TelegramApiException e){
@@ -81,7 +82,8 @@ public final class Bot extends TelegramLongPollingBot{
 
     private UserThread createUserSession(long chatId){
         try {
-            UserThread currentUserSession = new UserThread(this, chatId);
+            UserThread currentUserSession =
+                    new UserThread(this, chatId, this.sessionInfoFactory.getSessionInfoService());
             currentUserSession.start();
             return currentUserSession;
         } catch (IOException e) {
@@ -129,7 +131,8 @@ public final class Bot extends TelegramLongPollingBot{
                 for (Long sessionId : users.keySet()){
                     TelegramBotUserSession userSession = users.get(sessionId).getUserSession();
                     if (userSession.getUserDialog().getIsEnd()){
-                        dbServise.delete(userSession.getCurrentChatId());
+                        userSession.sessionInfoService.delete(userSession.getCurrentChatId());
+                        userSession.sessionInfoService.saveAndClose();
                         users.remove(sessionId);
                         continue;
                     }
@@ -139,6 +142,7 @@ public final class Bot extends TelegramLongPollingBot{
                             .plusSeconds(Constants.TIMEOUT)
                             .isAfter(currentTime)){
                         userSession.saveSession();
+                        userSession.sessionInfoService.saveAndClose();
                         users.remove(sessionId);
                     }
                 }

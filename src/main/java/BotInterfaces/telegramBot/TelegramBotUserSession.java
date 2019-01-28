@@ -3,6 +3,7 @@ package BotInterfaces.telegramBot;
 import BotInterfaces.Dialog;
 import BotInterfaces.UserSession;
 import mysqlWork.SessionEntity;
+import mysqlWork.SessionInfoService;
 import questions.QuestionsGenerator;
 
 import java.io.IOException;
@@ -13,13 +14,16 @@ public class TelegramBotUserSession extends UserSession {
     private Long currentChatId;
     private TelegramIOManager ioManager;
     private Bot bot;
+    public SessionInfoService sessionInfoService;
 
     Long getCurrentChatId() { return currentChatId; }
 
-    public TelegramBotUserSession(QuestionsGenerator questionsGenerator, Bot bot, Long chatId){
+    public TelegramBotUserSession(QuestionsGenerator questionsGenerator,
+                                  Bot currentBot, Long chatId, SessionInfoService sessionInfoService){
         super(questionsGenerator);
 
-        this.bot = bot;
+
+        bot = currentBot;
         ioManager = new TelegramIOManager(bot, chatId);
         userDialog = new Dialog(questionHelper, ioManager);
         currentChatId = chatId;
@@ -33,14 +37,14 @@ public class TelegramBotUserSession extends UserSession {
     public void saveSession() {
         String serializedString = questionHelper.getQuestionsId().toString();
         serializedString = serializedString.substring(1, serializedString.length() - 1);
-        SessionEntity dbSession = bot.dbServise.get(currentChatId);
+        SessionEntity dbSession = sessionInfoService.get(currentChatId);
         if (dbSession == null)
 
-            bot.dbServise.add(new SessionEntity().sessionEntity(currentChatId, questionHelper.getScore(), serializedString));
+            sessionInfoService.add(new SessionEntity().sessionEntity(currentChatId, questionHelper.getScore(), serializedString));
         else {
             dbSession.setScore(questionHelper.getScore());
             dbSession.setUserQuestions(serializedString);
-            bot.dbServise.update(dbSession);
+            sessionInfoService.update(dbSession);
         }
     }
 

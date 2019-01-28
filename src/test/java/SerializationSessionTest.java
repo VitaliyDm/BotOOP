@@ -26,11 +26,13 @@ public class SerializationSessionTest {
 
     @Test
     public void SafeSessionTest() throws IOException {
-        TelegramBotUserSession session = new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS), bot, userId);
+        TelegramBotUserSession session =
+                new TelegramBotUserSession(new QuestionsGenerator(Constants.PATH_TO_QUESTIONS),
+                        bot, userId, bot.sessionInfoFactory.getSessionInfoService());
         session.setSession(questionId, score);
         session.saveSession();
 
-        SessionEntity serialaizedSession = bot.dbServise.get(userId);
+        SessionEntity serialaizedSession = session.sessionInfoService.get(userId);
         assertEquals((int)serialaizedSession.getScore(), score);
         assertEquals(serialaizedSession.getUserQuestions(), questionId);
     }

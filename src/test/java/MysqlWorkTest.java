@@ -1,4 +1,5 @@
 import mysqlWork.SessionEntity;
+import mysqlWork.SessionInfoFactory;
 import mysqlWork.SessionInfoService;
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +12,8 @@ public class MysqlWorkTest {
     private Long userId;
     private String questionId;
     private int score;
-    private SessionInfoService dbServise = new SessionInfoService();
+    private SessionInfoFactory dbServiseFactory = new SessionInfoFactory();
+    private SessionInfoService dbService;
     private SessionEntity sessionEntity = new SessionEntity().sessionEntity(0, 0, "");
 
     @Before
@@ -22,19 +24,20 @@ public class MysqlWorkTest {
         sessionEntity.setChatId(userId);
         sessionEntity.setScore(score);
         sessionEntity.setUserQuestions(questionId);
-        dbServise.add(sessionEntity);
+        dbService = dbServiseFactory.getSessionInfoService();
+        dbService.add(sessionEntity);
     }
 
     @After
     public void deleteUser(){
         try {
-            dbServise.delete(userId);
+            dbService.delete(userId);
         } catch (IllegalArgumentException ignored){ }
     }
 
     @Test
     public void setDataToDataBaseTest(){
-        SessionEntity session = dbServise.get(userId);
+        SessionEntity session = dbService.get(userId);
         assertEquals(questionId, session.getUserQuestions());
         assertEquals(score, (int)session.getScore());
     }
@@ -43,8 +46,8 @@ public class MysqlWorkTest {
     public void updateDataInDataBaseTest(){
         int newScore = 20;
         sessionEntity.setScore(newScore);
-        dbServise.update(sessionEntity);
-        SessionEntity session = dbServise.get(userId);
+        dbService.update(sessionEntity);
+        SessionEntity session = dbService.get(userId);
         assertEquals(questionId, session.getUserQuestions());
         assertEquals(newScore, (int)session.getScore());
     }
@@ -52,8 +55,8 @@ public class MysqlWorkTest {
     @Test
     public void deleteDataInDataBase(){
 
-        dbServise.delete(userId);
-        SessionEntity session = dbServise.get(userId);
+        dbService.delete(userId);
+        SessionEntity session = dbService.get(userId);
         Integer a = null;
         try
         {
