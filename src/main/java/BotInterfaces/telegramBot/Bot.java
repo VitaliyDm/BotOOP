@@ -23,7 +23,7 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public final class Bot extends TelegramLongPollingBot implements Runnable {
+public final class Bot extends TelegramLongPollingBot{
     private static final String loggingProperties = "/logging.properties";
     static Logger log = Logger.getLogger(Bot.class.getName());
     Map<Long, UserThread> users = new HashMap<>();
@@ -52,7 +52,8 @@ public final class Bot extends TelegramLongPollingBot implements Runnable {
         } catch (TelegramApiException e){
             log.log(Level.SEVERE, e.getMessage(), e);
         }
-        this.run();
+        ControlThread controlThread = new ControlThread();
+        controlThread.run();
     }
 
     void sendMessage(String text, Long chatId){
@@ -109,34 +110,37 @@ public final class Bot extends TelegramLongPollingBot implements Runnable {
         return botToken;
     }
 
-    @Override
-    public void run(){
-        while (true){
-            checkAndRemoveInactiveThreads();
-            try {
-                Thread.sleep(Constants.TIMEOUT);
-            } catch (InterruptedException e) {
-                log.log(Level.SEVERE, e.getMessage(), e);
+    private class ControlThread implements Runnable{
+
+        @Override
+        public void run(){
+            while (true){
+                checkAndRemoveInactiveThreads();
+                try {
+                    Thread.sleep(Constants.TIMEOUT);
+                } catch (InterruptedException e) {
+                    log.log(Level.SEVERE, e.getMessage(), e);
+                }
             }
         }
-    }
 
-    private void checkAndRemoveInactiveThreads(){
-        synchronized (users) {
-            for (Long sessionId : users.keySet()){
-                TelegramBotUserSession userSession = users.get(sessionId).getUserSession();
-                if (userSession.getUserDialog().getIsEnd()){
-                    dbServise.delete(userSession.getCurrentChatId());
-                    users.remove(sessionId);
-                    continue;
-                }
+        private void checkAndRemoveInactiveThreads(){
+            synchronized (users) {
+                for (Long sessionId : users.keySet()){
+                    TelegramBotUserSession userSession = users.get(sessionId).getUserSession();
+                    if (userSession.getUserDialog().getIsEnd()){
+                        dbServise.delete(userSession.getCurrentChatId());
+                        users.remove(sessionId);
+                        continue;
+                    }
 
-                LocalDateTime currentTime = LocalDateTime.now();
-                if (users.get(sessionId).getLastActivityTime()
-                        .plusSeconds(Constants.TIMEOUT)
-                        .isAfter(currentTime)){
-                    userSession.saveSession();
-                    users.remove(sessionId);
+                    LocalDateTime currentTime = LocalDateTime.now();
+                    if (users.get(sessionId).getLastActivityTime()
+                            .plusSeconds(Constants.TIMEOUT)
+                            .isAfter(currentTime)){
+                        userSession.saveSession();
+                        users.remove(sessionId);
+                    }
                 }
             }
         }
